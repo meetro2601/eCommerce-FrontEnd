@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import "../src/App.css";
 import { simpleAction } from './actions/simpleAction'
+import Footer from './components/Footer/Footer';
+import Login from './components/login/Login';
+import Register from './components/login/Register';
 
 const mapDispatchToProps = dispatch => ({
   simpleAction: () => dispatch(simpleAction())
@@ -21,16 +25,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <pre>
+        {/* <pre>
           {
             JSON.stringify(this.props)
           }
         </pre>
         <button onClick={this.simpleAction}>Test redux action</button>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+         */}
+
+         <Login/>
+        <Register/>
+        <Footer/>
+      </div  >
     );
   }
 }
