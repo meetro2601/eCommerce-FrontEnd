@@ -1,44 +1,45 @@
 import React from "react";
-import styles from "./Header.module.scss";
-import headerLogo from "../assets/images/logo/header-logo.png";
-import shop from "../assets/images/header-icon/shop.png";
-import deal from "../assets/images/header-icon/deal.png";
-import blog from "../assets/images/header-icon/blog.png";
-import sell from "../assets/images/header-icon/delivery-box.png";
-import flagIndia from "../assets/images/flags/Flag_of_India.png";
-import flagUSA from "../assets/images/flags/Flag_of_Usa.png";
-import flagAus from "../assets/images/flags/Flag_of_Australia.png";
-import flagCanada from "../assets/images/flags/Flag_of_Canada.png";
-import flagEur from "../assets/images/flags/Flag_of_Europe.png";
-import flagChina from "../assets/images/flags/Flag_of_China.png";
+import "./Header.scss";
+import headerLogo from "../../assets/images/logo/header-logo.png";
+import shop from "../../assets/images/header-icon/shop.png";
+import deal from "../../assets/images/header-icon/deal.png";
+import blog from "../../assets/images/header-icon/blog.png";
+import sell from "../../assets/images/header-icon/delivery-box.png";
+import flagIndia from "../../assets/images/flags/Flag_of_India.png";
+import flagUSA from "../../assets/images/flags/Flag_of_Usa.png";
+import flagAus from "../../assets/images/flags/Flag_of_Australia.png";
+import flagCanada from "../../assets/images/flags/Flag_of_Canada.png";
+import flagEur from "../../assets/images/flags/Flag_of_Europe.png";
+import flagChina from "../../assets/images/flags/Flag_of_China.png";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
   return (
-    <header class={styles["header"]}>
-      <div class={styles["header-top"]}>
-        <div class={styles["container"]}>
-          <div class={styles["top-header-text"]}>
+    <header className="header">
+      <div className="header-top">
+        <div className="container">
+          <div className="top-header-text">
             FREE SHIPPING on orders over ₹10000
           </div>
         </div>
       </div>
       {/*-- End of Header Top --*/}
 
-      <div class={styles["header-middle"]}>
-        <div class={styles["container"]}>
-          <div class={`${styles["header-left"]} mr-md-4`}>
+      <div className="header-middle">
+        <div className="container">
+          <div className="header-left">
             <a
               href="#"
-              class={`${styles["mobile-menu-toggle"]} ${styles["w-icon-hamburger"]}`}
+              className="mobile-menu-toggle w-icon-hamburger"
               aria-label="menu-toggle"
-            ></a>
-            <a href="index.html" class={`${styles["logo"]} ml-lg-0`}>
+            >Mobile</a>
+            <Link to='/' className="logo ml-lg-0">
               <img src={headerLogo} alt="logo" width="180" />
-            </a>
-            <nav class={`${styles["main-nav"]} ${styles["header-icon-menu"]}`}>
-              <ul class={styles["menu"]}>
-                <li class={styles["active"]}>
+            </Link>
+            <nav className="main-nav header-icon-menu">
+              <ul className="menu">
+                <li className="active">
                   <a href="Shop.html">
                     <img src={shop}></img>
                     <p>
@@ -78,40 +79,40 @@ const Header = () => {
             </nav>
           </div>
           <div
-            class={`${styles["header-right"]} ml-4`}
+            className="header-right ml-4"
           >
-            <div class={styles["header-sign-in"]}>
-              <div class={styles["dropdown"]}>
+            <div className="header-sign-in">
+              <div className="dropdown">
                 <a href="#Sign in ">Sign in </a>
-                <div class={styles["dropdown-box"]}>
-                  <a href="#"> Sign In</a>
+                <div className="dropdown-box">
+                  <Link to='/user/login'> Sign In</Link>
                   <a href="#"> Compare</a>
                   <hr />
-                  <a class={styles["Register"]} href="#">
+                  <Link to='/user/register' className="Register">
                     {" "}
                     Register
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
-            <div class={styles["selected-country"]}>
-              <div class={styles["dropdown"]}>
+            <div className="selected-country">
+              <div className="dropdown">
                 <a href="#language">
                   <img
                     src={flagIndia}
                     alt="IND Flag"
                     width="25"
-                    class={styles["dropdown-image"]}
+                    className="dropdown-image"
                   ></img>{" "}
                   IND
                 </a>
-                <div class={styles["dropdown-box"]}>
+                <div className="dropdown-box">
                   <a href="#USA">
                     <img
                       src={flagUSA}
                       alt="USA Flag"
                       width="25"
-                      class={styles["dropdown-image"]}
+                      className="dropdown-image"
                     ></img>
                     USA
                   </a>
@@ -120,7 +121,7 @@ const Header = () => {
                       src={flagAus}
                       alt="AUD Flag"
                       width="25"
-                      class={styles["dropdown-image"]}
+                      className="dropdown-image"
                     ></img>
                     Australia
                   </a>
@@ -129,7 +130,7 @@ const Header = () => {
                       src={flagIndia}
                       alt="IND Flag"
                       width="25"
-                      class={styles["dropdown-image"]}
+                      className="dropdown-image"
                     ></img>
                     India
                   </a>
@@ -138,7 +139,7 @@ const Header = () => {
                       src={flagCanada}
                       alt="CAD Flag"
                       width="25"
-                      class={styles["dropdown-image"]}
+                      className="dropdown-image"
                     ></img>
                     Canada
                   </a>
@@ -147,7 +148,7 @@ const Header = () => {
                       src={flagEur}
                       alt="EUR Flag"
                       width="25"
-                      class={styles["dropdown-image"]}
+                      className="dropdown-image"
                     ></img>
                     European Union
                   </a>
@@ -156,35 +157,35 @@ const Header = () => {
                       src={flagChina}
                       alt="CNY Flag"
                       width="25"
-                      class={styles["dropdown-image"]}
+                      className="dropdown-image"
                     ></img>
                     China
                   </a>
                 </div>
               </div>
             </div>
-            <div class={`me-0 me-lg-2`}>
-              <a href="#" class="cart-toggle label-down link">
-                <i class={styles["w-icon-cart"]}>
-                  <span class={styles["cart-count"]}>2</span>
+            <div className="mr-0 mr-lg-2">
+              
+                <i className="w-icon-cart">
+                  <span className="cart-count">2</span>
                 </i>
-              </a>
+             
             </div>
           </div>
         </div>
       </div>
       {/*-- End of Header Middle --*/}
 
-      <div class={`${styles["header-bottom"]}`}>
-        <div class="container-fluid px-4">
-          <div class={styles["inner-wrap"]}>
-            <div class={`${styles["header-left"]} ${styles["flex-1"]}`}>
-              <div class={`${styles["dropdown"]} ${styles["category-dropdown"]} ${styles["has-border"]}`}
+      <div className="header-bottom sticky-content fix-top sticky-header">
+        <div className="container">
+          <div className="inner-wrap">
+            <div className="header-left flex-1">
+              <div className="dropdown category-dropdown has-border"
                 data-visible="true"
               >
                 <a
                   href="#"
-                  class={styles["category-toggle"]}
+                  className="category-toggle"
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
@@ -192,22 +193,22 @@ const Header = () => {
                   data-display="static"
                   title="All Categories"
                 >
-                  <i class="w-icon-category"></i>
+                  <i className="w-icon-category"></i>
                   <span>All Categories</span>
                 </a>
 
-                <div class={styles["dropdown-box"]}>
+                <div className="dropdown-box">
                   <ul
-                    class={`${styles["menu"]} ${styles["vertical-menu"]} ${styles["category-menu"]}`}
+                    className="menu vertical-menu category-menu"
                   >
-                    <li class={styles["has-submenu"]}>
+                    <li className="has-submenu">
                       <a href="shop-fullwidth-banner.html">
-                        <i class="w-icon-tshirt2"></i>Fashion
+                        <i className="w-icon-tshirt2"></i>Fashion
                       </a>
-                      <ul class={styles["megamenu"]}>
+                      <ul className="megamenu">
                         <li>
-                          <h4 class={styles["menu-title"]}>Women</h4>
-                          <hr class={styles["divider"]} />
+                          <h4 className="menu-title">Women</h4>
+                          <hr className="divider"/>
                           <ul>
                             <li>
                               <a href="shop-fullwidth-banner.html">
@@ -244,8 +245,8 @@ const Header = () => {
                           </ul>
                         </li>
                         <li>
-                          <h4 class={styles["menu-title"]}>Men</h4>
-                          <hr class={styles["divider"]} />
+                          <h4 className="menu-title">Men</h4>
+                          <hr className="divider"/>
                           <ul>
                             <li>
                               <a href="shop-fullwidth-banner.html">
@@ -285,27 +286,27 @@ const Header = () => {
                     </li>
                     <li>
                       <a href="shop-fullwidth-banner.html">
-                        <i class="w-icon-heartbeat"></i>Healthy & Beauty
+                        <i className="w-icon-heartbeat"></i>Healthy & Beauty
                       </a>
                     </li>
                     <li>
                       <a href="shop-fullwidth-banner.html">
-                        <i class="w-icon-gift"></i>Gift Ideas
+                        <i className="w-icon-gift"></i>Gift Ideas
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
               <form method="get" action="#"
-                                class={`${styles["header-search"]} ${styles["hs-expanded"]} ${styles["hs-round"]} d-none d-md-flex input-wrapper mr-4 ml-4`}>
-                                <input type="text" class={styles["form-control"]} name="search" id="search"
+                                className="header-search hs-expanded hs-round d-none d-md-flex input-wrapper mr-4 ml-4">
+                                <input type="text" className="form-control" name="search" id="search"
                                     placeholder="Search by Keyword, Catalog No. or CAS No." required />
-                                <button class={`${styles["btn"]} ${styles["btn-search"]}`} type="submit"><i class="w-icon-search"></i>
+                                <button className="btn btn-search" type="submit"><i className="w-icon-search"></i>
                                 </button>
                             </form>
             </div>
-            <div class={`${styles["header-right"]} pr-0 ml-4`}>
-                            <button class={`${styles["Enquiry-btn"]} ${styles["btn"]} ${styles["btn-primary"]}`}><i class="w-icon-map-marker mr-1"></i>Post Your Enquiry</button>
+            <div className="header-right pr-0 ml-4">
+                            <button className="Enquiry-btn btn btn-primary"><i className="w-icon-map-marker mr-1"></i>Post Your Enquiry</button>
                             
                         </div>
           </div>
