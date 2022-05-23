@@ -1,44 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import "../src/App.css";
 import { simpleAction } from './actions/simpleAction'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.scss'
+import './Helper.scss'
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Login from './components/login/Login';
 import Register from './components/login/Register';
+import Home from './pages/Home';
 
-const mapDispatchToProps = dispatch => ({
-  simpleAction: () => dispatch(simpleAction())
-})
+    
+const App = ({simpleAction})=> {
 
-
-const mapStateToProps = state => ({
-  ...state
-})
-
-
-class App extends Component {
-
-  simpleAction = (event) => {
-    this.props.simpleAction();
-  }
-
-  render() {
     return (
-      <div className="App">
-        {/* <pre>
-          {
-            JSON.stringify(this.props)
-          }
-        </pre>
-        <button onClick={this.simpleAction}>Test redux action</button>
-         */}
-
-         <Login/>
-        <Register/>
-        <Footer/>
-      </div  >
+      <BrowserRouter>
+        <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/user/login' element={<Login/>}></Route>
+        <Route path='/user/register' element={<Register/>}></Route>
+      </Routes>
+       <Footer/>
+      </BrowserRouter>
     );
   }
-}
 
+  const mapDispatchToProps = dispatch => ({
+    simpleAction: () => dispatch(simpleAction())
+  })
+  
+  const mapStateToProps = state => ({
+    ...state
+  })
+  
 export default connect(mapStateToProps, mapDispatchToProps)(App);

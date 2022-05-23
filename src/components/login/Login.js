@@ -1,5 +1,5 @@
 import React from "react";
-import "../login/Login.css";
+import "../login/Login.scss";
 
 const Login = () => {
     return(
@@ -26,7 +26,7 @@ const Login = () => {
                         </div>
                         <div className="form-checkbox d-flex align-items-center justify-content-between">
                             <input type="checkbox" className="custom-checkbox" id="remember1" name="remember1" required=""/>
-                            <label for="remember1">Remember me</label>
+                            <label htmlFor="remember1">Remember me</label>
                             <a href="/">Last your password?</a>
                         </div>
                         <a href="/" className="btn btn-primary">Sign In</a>

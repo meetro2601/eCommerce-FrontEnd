@@ -1,5 +1,5 @@
 import React from "react";
-import "../login/Login.css";
+import "../login/Login.scss";
 
 const Register = () => {
     return(
@@ -73,10 +73,10 @@ const Register = () => {
                             
                             <div className="form-checkbox d-flex align-items-center justify-content-between mb-5">
                                 <input type="checkbox" className="custom-checkbox" id="remember" name="remember" required=""/>
-                                <label for="remember" className="font-size-md">I agree to the </label>
+                                <label htmlFor="remember" className="font-size-md">I agree to the </label>
                                 <a  href="/" className="text-primary font-size-md">privacy policy</a>
                             </div>
-                            <a href="/" className="btn btn-primary">Sign Un</a>
+                            <a href="/" className="btn btn-primary">Sign Up</a>
                         </div>
                     </div>
                 </div>
