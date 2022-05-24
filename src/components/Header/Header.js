@@ -165,11 +165,11 @@ const Header = () => {
               </div>
             </div>
             <div className="mr-0 mr-lg-2">
-              
-                <i className="w-icon-cart">
-                  <span className="cart-count">2</span>
-                </i>
-             
+
+              <i className="w-icon-cart">
+                <span className="cart-count">2</span>
+              </i>
+
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@ const Header = () => {
                       <ul className="megamenu">
                         <li>
                           <h4 className="menu-title">Women</h4>
-                          <hr className="divider"/>
+                          <hr className="divider" />
                           <ul>
                             <li>
                               <a href="shop-fullwidth-banner.html">
@@ -246,7 +246,7 @@ const Header = () => {
                         </li>
                         <li>
                           <h4 className="menu-title">Men</h4>
-                          <hr className="divider"/>
+                          <hr className="divider" />
                           <ul>
                             <li>
                               <a href="shop-fullwidth-banner.html">
@@ -298,17 +298,17 @@ const Header = () => {
                 </div>
               </div>
               <form method="get" action="#"
-                                className="header-search hs-expanded hs-round d-none d-md-flex input-wrapper mr-4 ml-4">
-                                <input type="text" className="form-control" name="search" id="search"
-                                    placeholder="Search by Keyword, Catalog No. or CAS No." required />
-                                <button className="btn btn-search" type="submit"><i className="w-icon-search"></i>
-                                </button>
-                            </form>
+                className="header-search hs-expanded hs-round d-none d-md-flex input-wrapper mr-4 ml-4">
+                <input type="text" className="form-control" name="search" id="search"
+                  placeholder="Search by Keyword, Catalog No. or CAS No." required />
+                <button className="btn btn-search" type="submit"><i className="w-icon-search"></i>
+                </button>
+              </form>
             </div>
             <div className="header-right pr-0 ml-4">
-                            <button className="Enquiry-btn btn btn-primary"><i className="w-icon-map-marker mr-1"></i>Post Your Enquiry</button>
-                            
-                        </div>
+              <button className="Enquiry-btn btn btn-primary"><i className="w-icon-map-marker mr-1"></i>Post Your Enquiry</button>
+
+            </div>
           </div>
         </div>
       </div>
