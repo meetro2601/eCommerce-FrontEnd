@@ -1,5 +1,4 @@
 import React from "react";
-import './ProductCard.scss'
 import pro11 from "../../assets/images/demos/demo2/products/1-1-1.jpg";
 import pro12 from "../../assets/images/demos/demo2/products/1-1-2.jpg";
 
