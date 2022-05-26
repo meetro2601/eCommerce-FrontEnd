@@ -40,8 +40,11 @@ const Header = () => {
             <nav className="main-nav header-icon-menu">
               <ul className="menu">
                 <li className="active">
+
+
                   <a href="/">
                     <img src={shop} alt="shop"></img>
+
                     <p>
                       {" "}
                       Shop <span>By Brand</span>{" "}
@@ -49,8 +52,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
+
+                  
                   <a href="/">
                     <img src={deal} alt="deal"></img>
+
                     <p>
                       {" "}
                       Ready <span>Stock</span>{" "}
@@ -58,8 +64,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
+
+                 
                   <a href="/">
                     <img src={blog} alt="blog"></img>
+
                     <p>
                       {" "}
                       Blogs <span>Latest News</span>{" "}
@@ -67,8 +76,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
+
+                  
                   <a href="/">
                     <img src={sell} alt="sell"></img>
+
                     <p>
                       {" "}
                       Sell<span>On Biomall</span>{" "}
@@ -86,7 +98,8 @@ const Header = () => {
                 <a href="/">Sign in </a>
                 <div className="dropdown-box">
                   <Link to='/user/login'> Sign In</Link>
-                  <a href="/"> Compare</a>
+
+                  <Link to='/compare'> Compare</Link>
                   <hr />
                   <Link to='/user/register' className="Register">
                     {" "}

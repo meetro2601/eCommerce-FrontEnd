@@ -2,8 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { simpleAction } from './actions/simpleAction'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.scss'
-import './Helper.scss'
 import './assets/scss/index.scss'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
