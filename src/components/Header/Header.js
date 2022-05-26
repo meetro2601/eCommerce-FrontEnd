@@ -30,7 +30,7 @@ const Header = () => {
         <div className="container">
           <div className="header-left">
             <a
-              href="#"
+              href="/"
               className="mobile-menu-toggle w-icon-hamburger"
               aria-label="menu-toggle"
             >Mobile</a>
@@ -40,8 +40,8 @@ const Header = () => {
             <nav className="main-nav header-icon-menu">
               <ul className="menu">
                 <li className="active">
-                  <a href="Shop.html">
-                    <img src={shop}></img>
+                  <a href="/">
+                    <img src={shop} alt="shop"></img>
                     <p>
                       {" "}
                       Shop <span>By Brand</span>{" "}
@@ -49,8 +49,8 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={deal}></img>
+                  <a href="/">
+                    <img src={deal} alt="deal"></img>
                     <p>
                       {" "}
                       Ready <span>Stock</span>{" "}
@@ -58,8 +58,8 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="blog.html">
-                    <img src={blog}></img>
+                  <a href="/">
+                    <img src={blog} alt="blog"></img>
                     <p>
                       {" "}
                       Blogs <span>Latest News</span>{" "}
@@ -67,8 +67,8 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={sell}></img>
+                  <a href="/">
+                    <img src={sell} alt="sell"></img>
                     <p>
                       {" "}
                       Sell<span>On Biomall</span>{" "}
@@ -83,10 +83,10 @@ const Header = () => {
           >
             <div className="header-sign-in">
               <div className="dropdown">
-                <a href="#Sign in ">Sign in </a>
+                <a href="/">Sign in </a>
                 <div className="dropdown-box">
                   <Link to='/user/login'> Sign In</Link>
-                  <a href="#"> Compare</a>
+                  <a href="/"> Compare</a>
                   <hr />
                   <Link to='/user/register' className="Register">
                     {" "}
@@ -107,7 +107,7 @@ const Header = () => {
                   IND
                 </a>
                 <div className="dropdown-box">
-                  <a href="#USA">
+                  <a href="/">
                     <img
                       src={flagUSA}
                       alt="USA Flag"
@@ -116,7 +116,7 @@ const Header = () => {
                     ></img>
                     USA
                   </a>
-                  <a href="#AUD">
+                  <a href="/">
                     <img
                       src={flagAus}
                       alt="AUD Flag"
@@ -125,7 +125,7 @@ const Header = () => {
                     ></img>
                     Australia
                   </a>
-                  <a href="#IND">
+                  <a href="/">
                     <img
                       src={flagIndia}
                       alt="IND Flag"
@@ -134,7 +134,7 @@ const Header = () => {
                     ></img>
                     India
                   </a>
-                  <a href="#CAD">
+                  <a href="/">
                     <img
                       src={flagCanada}
                       alt="CAD Flag"
@@ -143,7 +143,7 @@ const Header = () => {
                     ></img>
                     Canada
                   </a>
-                  <a href="#EUR">
+                  <a href="/">
                     <img
                       src={flagEur}
                       alt="EUR Flag"
@@ -152,7 +152,7 @@ const Header = () => {
                     ></img>
                     European Union
                   </a>
-                  <a href="#CNY">
+                  <a href="/">
                     <img
                       src={flagChina}
                       alt="CNY Flag"
@@ -184,7 +184,7 @@ const Header = () => {
                 data-visible="true"
               >
                 <a
-                  href="#"
+                  href="/"
                   className="category-toggle"
                   role="button"
                   data-toggle="dropdown"
@@ -216,24 +216,24 @@ const Header = () => {
                               </a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">
+                              <a href="/">
                                 Best Sellers
                               </a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Trending</a>
+                              <a href="/">Trending</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Clothing</a>
+                              <a href="/">Clothing</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Shoes</a>
+                              <a href="/">Shoes</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Bags</a>
+                              <a href="/">Bags</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">
+                              <a href="/">
                                 Accessories
                               </a>
                             </li>
@@ -249,29 +249,29 @@ const Header = () => {
                           <hr className="divider" />
                           <ul>
                             <li>
-                              <a href="shop-fullwidth-banner.html">
+                              <a href="/">
                                 New Arrivals
                               </a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">
+                              <a href="/">
                                 Best Sellers
                               </a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Trending</a>
+                              <a href="/">Trending</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Clothing</a>
+                              <a href="/">Clothing</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Shoes</a>
+                              <a href="/">Shoes</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">Bags</a>
+                              <a href="/">Bags</a>
                             </li>
                             <li>
-                              <a href="shop-fullwidth-banner.html">
+                              <a href="/">
                                 Accessories
                               </a>
                             </li>
@@ -285,12 +285,12 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <a href="shop-fullwidth-banner.html">
+                      <a href="/">
                         <i className="w-icon-heartbeat"></i>Healthy & Beauty
                       </a>
                     </li>
                     <li>
-                      <a href="shop-fullwidth-banner.html">
+                      <a href="/">
                         <i className="w-icon-gift"></i>Gift Ideas
                       </a>
                     </li>
