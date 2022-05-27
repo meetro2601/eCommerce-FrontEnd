@@ -11,6 +11,8 @@ import Compare from './components/compare/Compare';
 import Wishlist from './components/wishlist/Wishlist';
 
 import Home from './pages/Home';
+import Shop from './components/shop/Shop';
+import Blog from './components/blog/Blog';
 
 
 const App = ({ simpleAction }) => {
@@ -23,7 +25,13 @@ const App = ({ simpleAction }) => {
         <Route path='/user/register' element={<Register />}></Route>
         <Route path='/compare' element={<Compare/>}></Route>
         <Route path='/wishlist' element={<Wishlist/>}></Route>
-
+        <Route path='/shop' element={<Shop/>}></Route>
+        <Route path='/blog' element={
+        
+          <Blog/>
+        
+          
+      } />
       </Routes>
       <Footer />
     </BrowserRouter>
