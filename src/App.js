@@ -13,6 +13,8 @@ import Wishlist from './components/wishlist/Wishlist';
 import Home from './pages/Home';
 import Shop from './components/shop/Shop';
 import Blog from './components/blog/Blog';
+import Galary from './components/galary/Galary';
+import Singleblog from './components/singleblog/Singleblog';
 
 
 const App = ({ simpleAction }) => {
@@ -27,11 +29,29 @@ const App = ({ simpleAction }) => {
         <Route path='/wishlist' element={<Wishlist/>}></Route>
         <Route path='/shop' element={<Shop/>}></Route>
         <Route path='/blog' element={
-        
-          <Blog/>
-        
+          <div className='row'>
+                <div className='col-md-9'>
+              <Blog/>
+              </div>
+              <div className='col-md-3'>
+              <Galary/>
+              </div>
+          </div>
           
       } />
+        <Route path='/signalblog' element={
+          <div className='row'>
+                <div className='col-md-9'>
+              <Singleblog/>
+              </div>
+              <div className='col-md-3'>
+              <Galary/>
+              </div>
+          </div>
+          
+      } />
+
+
       </Routes>
       <Footer />
     </BrowserRouter>
