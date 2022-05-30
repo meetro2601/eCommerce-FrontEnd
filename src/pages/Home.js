@@ -1,18 +1,181 @@
-import React from 'react'
-import ProductSwiper from '../components/Product-Swiper/ProductSwiper'
+import React from "react";
+import ProductSwiper from "../components/Product/ProductSwiper";
+import pro11 from "../assets/images/demos/demo2/products/1-1-1.jpg";
+import pro12 from "../assets/images/demos/demo2/products/1-1-2.jpg";
+import pro411 from "../assets/images/demos/demo2/products/4-1-1.jpg";
+import pro412 from "../assets/images/demos/demo2/products/4-1-2.jpg";
+import categoryBanner11 from "../assets/images/demos/demo2/categories/1-1.jpg";
+import categoryBanner12 from "../assets/images/demos/demo2/categories/1-2.jpg";
+import IntroBanner from "../components/Banner/IntroBanner";
+import Banner from "../components/Banner/Banner";
+import BannerSwiper from "../components/Banner/BannerSwiper";
+import BrandSwiper from "../components/Brands/BrandSwiper";
+import CategorySwiper from "../components/Category/CategorySwiper";
+import BlogPostSwiper from "../components/blog/BlogPostSwiper";
+
+const productsList = [
+  {
+    id: 1,
+    name: "Women's Comforter",
+    brand: "XYZ",
+    price: "$45.62 - $58.28",
+    images: [pro11, pro12],
+  },
+  {
+    id: 2,
+    name: "White Schoolbag",
+    brand: "ABC",
+    price: "$56.48",
+    images: [pro411, pro412],
+  },
+];
 
 const Home = () => {
   return (
-    <div class="home">
-    <div class="page-wrapper">
-    <main className='main'>
-      <div className='container'>
-      <ProductSwiper></ProductSwiper>
+    <>
+      <div className="intro-section mb-7">
+        <IntroBanner></IntroBanner>
       </div>
-      </main>
-    </div>
-    </div>
-  )
-}
+      {/* ====================================================== */}
+      <div className="container">
+        <div className="title-link-wrapper mb-3 appear-animate">
+          <h2 className="title title-deals mb-1">Best Selling Products</h2>
 
-export default Home
+          <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+            More Products<i className="w-icon-long-arrow-right"></i>
+          </a>
+        </div>
+        <ProductSwiper productsList={productsList}></ProductSwiper>
+        {/* ====================================================== */}
+        <div className="row category-wrapper electronics-cosmetics appear-animate mb-7">
+          <div className="col-md-6">
+            <div className="banner banner-fixed br-sm">
+              <figure>
+                <img
+                  src={categoryBanner11}
+                  alt="Category Banner"
+                  width="640"
+                  height="200"
+                  style={{ backgroundColor: "#25282D" }}
+                />
+              </figure>
+              <div className="banner-content y-50">
+                <h3 className="banner-title text-white ls-25 mb-0">
+                  Electronics
+                </h3>
+                <div className="banner-price-info text-white font-weight-bold text-uppercase mb-1">
+                  Starting At
+                  <strong className="text-secondary">$125.00</strong>
+                </div>
+                <hr className="banner-divider bg-white" />
+                <a
+                  href="shop-banner-sidebar.html"
+                  className="btn btn-white btn-link btn-underline btn-icon-right"
+                >
+                  Shop Now<i className="w-icon-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="banner banner-fixed br-sm">
+              <figure>
+                <img
+                  src={categoryBanner12}
+                  alt="Category Banner"
+                  width="640"
+                  height="200"
+                  style={{ backgroundColor: "#eeedec" }}
+                />
+              </figure>
+              <div className="banner-content y-50">
+                <h3 className="banner-title ls-25 text-capitalize mb-0">
+                  Cosmetics Sets
+                </h3>
+                <div className="banner-price-info font-weight-bold text-uppercase mb-1">
+                  Sale Up To
+                  <strong className="text-secondary">30% Off</strong>
+                </div>
+                <hr className="banner-divider bg-dark" />
+                <a
+                  href="shop-banner-sidebar.html"
+                  className="btn btn-dark btn-link btn-underline btn-icon-right"
+                >
+                  Shop Now<i className="w-icon-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* ====================================================== */}
+        <div className="banner-product-wrapper appear-animate">
+          <Banner></Banner>
+          <div className="title-link-wrapper mb-3 appear-animate">
+            <h2 className="title title-deals mb-1">Ready Stock</h2>
+
+            <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+              More Products<i className="w-icon-long-arrow-right"></i>
+            </a>
+          </div>
+          <ProductSwiper productsList={productsList}></ProductSwiper>
+          <BannerSwiper></BannerSwiper>
+        </div>
+        {/* ====================================================== */}
+        <div className="mb-7">
+        <div className="title-link-wrapper mb-3 appear-animate">
+          <h2 className="title title-deals mb-1">Top Brands</h2>
+          <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+            More Brands<i className="w-icon-long-arrow-right"></i>
+          </a>
+        </div>
+        <BrandSwiper></BrandSwiper>
+        </div>
+        {/* ====================================================== */}
+        <div className="banner-product-wrapper appear-animate">
+          <div className="title-link-wrapper mb-3 appear-animate">
+            <h2 className="title title-deals mb-1">Latest Products</h2>
+
+            <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+              More Products<i className="w-icon-long-arrow-right"></i>
+            </a>
+          </div>
+          <ProductSwiper productsList={productsList}></ProductSwiper>
+        </div>
+        {/* ====================================================== */}
+        <div className="banner-product-wrapper appear-animate">
+          <div className="title-link-wrapper mb-3 appear-animate">
+            <h2 className="title title-deals mb-1">Offer on Products</h2>
+
+            <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+              More Products<i className="w-icon-long-arrow-right"></i>
+            </a>
+          </div>
+          <ProductSwiper productsList={productsList}></ProductSwiper>
+        </div>
+        {/* ====================================================== */}
+        <div className="mb-7">
+        <div className="title-link-wrapper mb-3 appear-animate">
+          <h2 className="title title-deals mb-1">Top Categories</h2>
+          {/* <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+            More Categories<i className="w-icon-long-arrow-right"></i>
+          </a> */}
+        </div>
+        <CategorySwiper></CategorySwiper>
+        </div>
+        {/* ====================================================== */}
+        <div className="mb-7">
+        <div className="title-link-wrapper mb-3 appear-animate">
+          <h2 className="title title-deals mb-1">News & Updates</h2>
+          {/* <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+            More Categories<i className="w-icon-long-arrow-right"></i>
+          </a> */}
+        </div>
+        <BlogPostSwiper></BlogPostSwiper>
+        </div>
+        {/* ====================================================== */}
+      </div>
+    </>
+  );
+};
+
+export default Home;

@@ -29,11 +29,10 @@ const Header = () => {
       <div className="header-middle">
         <div className="container">
           <div className="header-left">
-            <a
-              href="#"
+            <button
               className="mobile-menu-toggle w-icon-hamburger"
               aria-label="menu-toggle"
-            >Mobile</a>
+            >Menu</button>
             <Link to='/' className="logo ml-lg-0">
               <img src={headerLogo} alt="logo" width="180" />
             </Link>
@@ -49,7 +48,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <img src={deal} alt='deal'></img>
                     <p>
                       {" "}
@@ -67,7 +66,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <img src={sell} alt='sell'></img>
                     <p>
                       {" "}
@@ -183,10 +182,8 @@ const Header = () => {
               <div className="dropdown category-dropdown has-border"
                 data-visible="true"
               >
-                <a
-                  href="#"
+                <button
                   className="category-toggle"
-                  role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="true"
@@ -195,7 +192,7 @@ const Header = () => {
                 >
                   <i className="w-icon-category"></i>
                   <span>All Categories</span>
-                </a>
+                </button>
 
                 <div className="dropdown-box">
                   <ul
