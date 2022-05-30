@@ -88,6 +88,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: -0.025em;
+  border-bottom: 1px solid #eee;
 }
 .header-bottom .main-nav {
   margin-left: 2.1rem;
@@ -772,6 +773,20 @@
 .category-menu .megamenu.type2 {
   display: block;
 }
+@media (min-width: 1200px) {
+  .category-menu .megamenu.type2 {
+    min-width: 88rem;
+  }
+}
+@media (max-width: 1199px) {
+  .main-nav .menu .megamenu {
+    left: -18rem;
+  }
+
+  .category-menu .megamenu.type2 {
+    min-width: 70rem;
+  }
+}
 
 /* vertical menu */
 .vertical-menu {
@@ -820,7 +835,7 @@
 }
 
 /* category dropdown */
-.category-dropdown > a {
+.category-dropdown > button {
   background: #fff;
   min-width: 28rem;
   padding: 2.4rem 2.3rem 2.3rem 2.5rem;
@@ -829,27 +844,27 @@
   transition: all 0.3s;
   text-transform: capitalize;
 }
-.category-dropdown > a i {
+.category-dropdown > button i {
   margin-bottom: 0.1rem;
   font-size: 1.7rem;
   line-height: 0;
 }
-.category-dropdown > a span {
+.category-dropdown > button span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-left: 0.7rem;
 }
-.category-dropdown > a::after {
+.category-dropdown > button::after {
   font-family: "wolmart";
   content: "";
   font-weight: 600;
   font-size: 0.9rem;
 }
-.category-dropdown > a:not(.btn):hover {
+.category-dropdown > button:not(.btn):hover {
   color: #fff;
 }
-.category-dropdown:hover > a, .category-dropdown.show > a {
+.category-dropdown:hover > button, .category-dropdown.show > button {
   color: #fff;
   background-color: #0088cc;
 }
@@ -895,8 +910,10 @@
   opacity: 1;
 }
 .category-dropdown.has-border .category-toggle {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-left:1px solid #eee;
+  border-right:1px solid #eee;
+  border-top: 0px;
+  border-bottom: 0px;
 }
 .category-dropdown.show-dropdown .dropdown-box {
   border-radius: 0.5rem;
@@ -915,7 +932,7 @@
 }
 
 @media (max-width: 1199px) {
-  .category-dropdown > a {
+  .category-dropdown > button {
     min-width: 24rem;
   }
   .header-icon-menu.main-nav .menu > li {
