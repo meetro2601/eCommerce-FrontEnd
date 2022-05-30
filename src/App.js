@@ -9,8 +9,12 @@ import Login from "./components/login/Login";
 import Register from "./components/login/Register";
 import Compare from "./components/compare/Compare";
 import Wishlist from "./components/wishlist/Wishlist";
+import './assets/scss/index.scss'
+import Home from './pages/Home';
+import ProductDetails from './pages/ProductDetails';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
-import Home from "./pages/Home";
 import MobileMenu from "./components/Header/MobileMenu";
 import Shop from "./components/shop/Shop";
 import BlogCategory from "./pages/BlogCategory";
@@ -30,6 +34,9 @@ const App = ({ simpleAction }) => {
           </Route>
           <Route path="compare" element={<Compare />}></Route>
           <Route path="wishlist" element={<Wishlist />}></Route>
+          <Route path='/productDetails' element={<ProductDetails />}></Route>
+        <Route path='/cart' element={<Cart />}></Route>
+        <Route path='/checkout' element={<Checkout />}></Route>
           <Route path="shop" element={<Shop />}></Route>
           <Route path="blogs">
             <Route path="blogcategory" element={<BlogCategory />} />
