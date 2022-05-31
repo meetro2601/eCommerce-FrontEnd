@@ -13183,3 +13183,68 @@ padding: 10px 20px;margin-bottom: 15px;}
     margin: 0 auto 1rem auto;
   }
 }
+
+/*----------------------------------
+    About Us    
+-----------------------------------*/
+.about-us.customer-service .title{
+  font-size: 34px;
+}
+.about-us .card-body {
+  padding: 1.2rem 2rem;
+}
+.about-us  .accordion-simple .card-body {
+  padding-top: 0;
+}
+
+.about-us .accordion-plus .expand::before, .about-us .accordion-plus .collapse::before {
+  content: "";
+  width: 1px;
+  height: 1rem;
+  right: 2.4rem;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+}
+.about-us .accordion-plus .collapse::before {
+  background-color: transparent !important;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.about-us .accordion-plus .expand::after, .about-us .accordion-plus .collapse::after {
+  content: "";
+  width: 10px;
+  height: 1px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.about-us .accordion-plus .collapse::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.accordion-plus .expand::after, .accordion-plus .collapse::after {
+  font-size: 16px;
+  right: 20px;
+  background-color: #333;
+}
+.about-us .accordion-simple:not(.accordion-icon) .card-header a::after {
+  font-size: 16px;
+}
+.about-us .accordion-plus .expand::before {
+  background-color: #333;
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+  transform: translateY(-50%) rotate(-180deg);
+}
+.about-us .card-header a.collapse {
+  color: #336699;
+  font-size: 18px;
+}
+.about-us .accordion-simple .card {
+  border-top: 1px solid #eee;
+}
+.about-us .border-no {
+  border: none !important;
+}
