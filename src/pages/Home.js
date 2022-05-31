@@ -6,12 +6,14 @@ import pro411 from "../assets/images/demos/demo2/products/4-1-1.jpg";
 import pro412 from "../assets/images/demos/demo2/products/4-1-2.jpg";
 import categoryBanner11 from "../assets/images/demos/demo2/categories/1-1.jpg";
 import categoryBanner12 from "../assets/images/demos/demo2/categories/1-2.jpg";
+import AboutImg from '../assets/images/demos/demo2/about.jpg'
 import IntroBanner from "../components/Banner/IntroBanner";
 import Banner from "../components/Banner/Banner";
 import BannerSwiper from "../components/Banner/BannerSwiper";
 import BrandSwiper from "../components/Brands/BrandSwiper";
 import CategorySwiper from "../components/Category/CategorySwiper";
 import BlogPostSwiper from "../components/blog/BlogPostSwiper";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 const productsList = [
   {
@@ -122,13 +124,13 @@ const Home = () => {
         </div>
         {/* ====================================================== */}
         <div className="mb-7">
-        <div className="title-link-wrapper mb-3 appear-animate">
-          <h2 className="title title-deals mb-1">Top Brands</h2>
-          <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
-            More Brands<i className="w-icon-long-arrow-right"></i>
-          </a>
-        </div>
-        <BrandSwiper></BrandSwiper>
+          <div className="title-link-wrapper mb-3 appear-animate">
+            <h2 className="title title-deals mb-1">Top Brands</h2>
+            <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+              More Brands<i className="w-icon-long-arrow-right"></i>
+            </a>
+          </div>
+          <BrandSwiper></BrandSwiper>
         </div>
         {/* ====================================================== */}
         <div className="banner-product-wrapper appear-animate">
@@ -154,25 +156,94 @@ const Home = () => {
         </div>
         {/* ====================================================== */}
         <div className="mb-7">
-        <div className="title-link-wrapper mb-3 appear-animate">
-          <h2 className="title title-deals mb-1">Top Categories</h2>
-          {/* <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+          <div className="title-link-wrapper mb-3 appear-animate">
+            <h2 className="title title-deals mb-1">Top Categories</h2>
+            {/* <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
             More Categories<i className="w-icon-long-arrow-right"></i>
           </a> */}
+          </div>
+          <CategorySwiper></CategorySwiper>
         </div>
-        <CategorySwiper></CategorySwiper>
-        </div>
-        {/* ====================================================== */}
+      </div>
+      {/* ====================================================== */}
+      <Testimonials></Testimonials>
+      {/* ====================================================== */}
+      <div className="container">
         <div className="mb-7">
-        <div className="title-link-wrapper mb-3 appear-animate">
-          <h2 className="title title-deals mb-1">News & Updates</h2>
-          {/* <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
+          <div className="title-link-wrapper mb-3 appear-animate">
+            <h2 className="title title-deals mb-1">News & Updates</h2>
+            {/* <a href="shop-boxed-banner.html" className="font-weight-bold ls-25">
             More Categories<i className="w-icon-long-arrow-right"></i>
           </a> */}
-        </div>
-        <BlogPostSwiper></BlogPostSwiper>
+          </div>
+          <BlogPostSwiper></BlogPostSwiper>
         </div>
         {/* ====================================================== */}
+        <div className="about-us customer-service row align-items-center">
+          <div className="col-md-6 pr-lg-8 mb-8">
+            <h2 className="title text-left">
+              We Provide Continuous &amp; Kind Service for Customers
+            </h2>
+            <div className="accordion accordion-simple accordion-plus">
+              <div className="card border-no">
+                <div className="card-header">
+                  <a href="#collapse3-1" className="collapse">
+                    Customer Service
+                  </a>
+                </div>
+                <div className="card-body expanded" id="collapse3-1">
+                  <p className="mb-0">
+                    Lorem ipsum dolor sit eiusamet, consectetur adipiscing elit,
+                    sed do eius mod tempor incididunt ut labore et dolore magna
+                    aliqua. Venenatis tell us in metus vulputate eu scelerisque
+                    felis. Vel pretium vulp.
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-header">
+                  <a href="#collapse3-2" className="expand">
+                    Online Consultation
+                  </a>
+                </div>
+                <div className="card-body collapsed" id="collapse3-2">
+                  <p className="mb-0">
+                    Lorem ipsum dolor sit eiusamet, consectetur adipiscing elit,
+                    sed do eius mod tempor incididunt ut labore et dolore magna
+                    aliqua. Venenatis tell us in metus vulputate eu scelerisque
+                    felis. Vel pretium vulp.
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-header">
+                  <a href="#collapse3-3" className="expand">
+                    Sales Management
+                  </a>
+                </div>
+                <div className="card-body collapsed" id="collapse3-3">
+                  <p className="mb-0">
+                    Lorem ipsum dolor sit eiusamet, consectetur adipiscing elit,
+                    sed do eius mod tempor incididunt ut labore et dolore magna
+                    aliqua. Venenatis tell us in metus vulputate eu scelerisque
+                    felis. Vel pretium vulp.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 mb-8">
+            <figure className="br-lg">
+              <img
+                src={AboutImg}
+                alt="about-us"
+                width="610"
+                height="500"
+                style={{ backgroundColor: "#CECECC" }}
+              ></img>
+            </figure>
+          </div>
+        </div>
       </div>
     </>
   );
