@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({detail}) => {
 
   return (
     <div className="product text-center">
       <figure className="product-media">
-        <a href="product-default.html">
+        <Link to='/productDetails'>
           <img src={detail.images[0]} alt="Product" width="300" height="338"></img>
           <img src={detail.images[1]} alt="Product" width="300" height="338"></img>
-        </a>
+        </Link>
         <div className="product-action-vertical">
           <a
             href="/"
@@ -29,7 +30,7 @@ const ProductCard = ({detail}) => {
       </figure>
       <div className="product-details">
         <h4 className="product-name">
-          <a href="product-default.html">{detail.name}</a>
+          <Link to ='/productDetails'>{detail.name}</Link>
         </h4>
           <h5>Brand: {detail.brand}</h5>
           <h5 className="product-price">

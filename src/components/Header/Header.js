@@ -72,13 +72,13 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to="/seller">
                     <img src={sell} alt='sell'></img>
                     <p>
                       {" "}
                       Sell<span>On Biomall</span>{" "}
                     </p>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
