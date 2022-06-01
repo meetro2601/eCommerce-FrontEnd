@@ -3,6 +3,7 @@ import Images from "../config/image";
 const Cart = (props) => {
 
     return (
+
         <main className="main cart">
             <nav className="breadcrumb-nav">
                 <div className="container">
@@ -13,7 +14,6 @@ const Cart = (props) => {
                     </ul>
                 </div>
             </nav>
-
             <div className="page-content">
                 <div className="container">
                     <div className="row gutter-lg mb-10">
@@ -47,6 +47,7 @@ const Cart = (props) => {
                                                 Classic Simple Backpack
                                             </a>
                                         </td>
+
                                         <td className="product-price"><span className="amount">$40.00</span></td>
                                         <td className="product-quantity">
                                             <div className="input-group">
@@ -90,7 +91,6 @@ const Cart = (props) => {
                                     </tr>
                                 </tbody>
                             </table>
-
                             <div className="cart-action mb-6">
                                 <a href="/" className="btn btn-dark btn-rounded btn-icon-left btn-shopping mr-auto"><i className="w-icon-long-arrow-left"></i>Continue Shopping</a>
                                 <button type="submit" className="btn btn-rounded btn-default btn-clear" name="clear_cart" value="Clear Cart">Clear Cart</button>
@@ -148,7 +148,6 @@ const Cart = (props) => {
                                             </div>
                                         </li>
                                     </ul>
-
                                     <div className="shipping-calculator">
                                         <p className="shipping-destination lh-1">Shipping to <strong>CA</strong>.</p>
 
@@ -187,7 +186,6 @@ const Cart = (props) => {
                                                 Totals</button>
                                         </form>
                                     </div>
-
                                     <hr className="divider mb-6" />
                                     <div className="order-total d-flex justify-content-between align-items-center">
                                         <label>Total</label>

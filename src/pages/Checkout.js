@@ -540,7 +540,6 @@ const Checkout = () => {
                         </div>
                       </div>
                     </div>
-
                     <div className="form-group place-order pt-6">
                       <button
                         type="submit"
