@@ -1,0 +1,444 @@
+ul.blog-nav-inner {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    transition: 0.3s ease;
+}
+
+ul.blog-nav-inner li {
+    list-style: none;
+}
+
+ul.blog-nav-inner li + li a {
+    padding: 10px;
+}
+
+ul.blog-nav-inner li {
+    padding: 10px 10px 10px 0px;
+}
+
+nav.blog-nav {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+ul.blog-nav-inner li a {
+    color: #000;
+}
+
+ul.blog-nav-inner li a:hover {
+    color: #08c;
+}
+nav.blog-nav input[type=checkbox] {
+    display: none;
+}
+nav.blog-nav .toogle-open {
+    top: 8px;
+    right: 15px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+.blog-nav label span, .blog-nav label span::before, .blog-nav label span::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    background: #0088cc;
+    transition: background 0.3s, transform 0.3s;
+}
+.blog-nav label span::before {
+    transform: translateY(-8px);
+}
+.blog-nav label span::after {
+    transform: translateY(8px);
+}
+.blog-nav input[type=checkbox]:checked ~ label span {
+    background: transparent;
+}
+.blog-nav input[type=checkbox]:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+.blog-nav input[type=checkbox]:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+.blog-nav input[type=checkbox]:checked ~  ul.blog-nav-inner {
+    padding-top: 20px;
+    opacity: 1;
+    height: 100%;
+}
+ul.blog-nav-inner li:last-child a {
+    border: 0;
+}
+nav.blog-nav h3 {
+    margin: 0 -10px;
+    display: none;
+}
+.slider-caption {
+    position: absolute;
+    padding: 20px;
+    bottom: 0;
+    z-index: 999;
+    color: #fff;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.90) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.90) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+.thumb-zoom {
+    overflow: hidden;
+    display: block;
+}
+.slider-section {
+    width: 60%;
+    position: relative;
+}
+.featured-section {
+    width: 40%;
+    padding-left: 5px;
+}
+.featured-section .feature-post {
+    display: inline-block;
+    width: 49.5%;
+    margin: 0 0px;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+.featured-section .feature-post.feature-large {
+    width: 100%;
+    margin: 0 0 5px;
+}
+.featured-section  .feature-post-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.slider-caption a {
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+        
+}
+.slider-caption h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.cat-wrap .cat-links {
+    background: #0088cc;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.cat-wrap .cat-links a {
+    color: #fff;
+}
+.slider-section{
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    padding-right: 0px;
+}
+.post-meta span.author a:before{
+    content: "";
+    font-family: "wolmart" ;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.post-meta span.posted-on a:before{
+    content: "";
+    font-family: "wolmart" ;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.post-meta .comments-count a:before {
+    content: "";
+    font-family: "wolmart" ;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.slider-caption .post-meta span {
+    margin: 0 5px 0 0px;
+    font-size: 12px;
+    text-transform: capitalize;
+    display: inline-block;
+        line-height: 1;
+    
+}
+.slider-caption .post-meta .post-author a, .slider-caption .post-meta .posted-on a{
+    font-weight: normal;
+}
+.thumb-zoom:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+.thumb-zoom img {
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+    transition: all ease 0.8s;
+    -webkit-transition: all ease 0.8s;
+    -ms-transition: all ease 0.8s;
+}
+.main-content.ultra_list_block, .ultra_list_sidebar {
+    padding-top: 30px;
+}
+.ultra_list_block .block-header {
+    position: relative;
+    border-bottom: 2px solid #0088cc;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+}
+
+.block-header .header {
+    background: #0088cc;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14.4px;
+    float: left;
+    padding: 5px 10px 4px 15px;
+    position: relative;
+    max-height: 31px;
+}
+
+.ultra_list_block .header:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 32px 0 0 20px;
+    border-color: transparent transparent transparent #0088cc;
+    line-height: 0px;
+    _border-color: #000000 #000000 #000000 #e54e54;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    right: -20px;
+    top: 0;
+}
+.blog-life-science .post-list .post-media {
+    max-width: 35%;
+    flex: 0 0 35%;
+}
+.ultra_list_block .post-meta > span {
+    margin: 0 10px 0 0;
+}
+
+.ultra_list_block .post-meta a {
+    font-weight: normal;
+    font-size: 12px;
+}
+.ultra_list_block .post-title {
+    margin: 5px 0 10px;
+}
+.ultra_list_block .post-meta {
+    margin-bottom: 10px;
+}
+.blog-life-science .post-listing {
+    margin-bottom: 25px;
+}
+.ultra_list_sidebar .widget h3.widget-title {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+    padding: 6px 0;
+    border-bottom: 1px solid #ccc !important;
+    position: relative;
+        margin-bottom: 20px;
+}
+
+.ultra_list_sidebar .widget .widget-title:before {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #0088cc;
+    left: 0;
+    bottom: 0px;
+}
+.ultra_list_sidebar .emaillist .form-group {
+    margin-bottom: 15px;
+}
+
+.ultra_list_sidebar .emaillist .form-group label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.social-followers li {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.social-followers li.Facebook {
+    background: #4f6ca8;
+}
+
+.social-followers li a {
+    color: #fff;
+    line-height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.social-followers .Twitter {
+    background-color: #00adef;
+}
+
+.social-followers .instagram {
+    background-color: #cc0001;
+}
+
+.social-followers li a i {
+    font-size: 20px;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.social-followers li a span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    line-height: inherit;
+    font-size: 15px;
+    font-weight: 500;
+}
+.blog-diagnostics {
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+}
+.post-media .cat-wrap {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+}
+
+.post-media .image-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 32, 41, 0.3);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.protocols-links li {
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.protocols-links li a {
+    color: #333;
+}
+
+.protocols-links li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    font-family: "wolmart";
+    top: 1px;
+    color: #333;
+    font-size: 12px;
+}
+.protocols-links li a:hover {
+    color: #08c;
+}
+.Environment-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Environment-inner > * {
+    flex: 1;
+}
+.Environment-inner-right figure.post-media {
+    max-width: 33%;
+    flex: 0 0 100%;
+}
+.Environment-inner-right .post-listing {
+    margin-bottom: 25px;
+}
+
+.Environment-inner-left {
+    padding-right: 25px;
+}
+.bolg-homeslider .swiper-button-prev, .bolg-homeslider .swiper-button-next {
+    background-color: rgb(51 51 51 / 60%);
+    color: #fff;
+}
+@media (min-width: 992px){
+    nav.blog-nav .toogle-open{
+        display: none;
+    }
+}
+@media (max-width: 991px){
+    ul.blog-nav-inner{
+        opacity: 0;
+        height: 0;
+        flex-direction: column;
+    }
+    ul.blog-nav-inner li a {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        display: block;
+    }
+    nav.blog-nav {
+        padding: 9px;
+    }
+    ul.blog-nav-inner li {
+        padding: 0;
+    }
+
+    ul.blog-nav-inner li + li a {
+        padding: 6px 0;
+    }
+    nav.blog-nav h3{
+        display: block;
+    }
+}
+@media (max-width: 767px){
+    .slider-section, .featured-section {
+        width: 100%;
+        margin-bottom: 7px;
+            padding: 0 10px;
+    }
+    .blog-life-science .post-list .post-media {
+        max-width: 100%;
+    }
+    .Environment-inner-left {
+        flex: 100%;
+        padding: 0;
+    }
+    .Environment-inner-right figure.post-media {
+        max-width: 100%;
+    }
+}

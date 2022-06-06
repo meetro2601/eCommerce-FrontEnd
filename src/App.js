@@ -17,6 +17,7 @@ import BlogCategory from "./pages/BlogCategory";
 import Singleblog from "./pages/Singleblog";
 import Seller from "./pages/Seller";
 import AppLayout from "./components/Layout/AppLayout";
+import Bloghome from "./components/blog/Bloghome";
 
 const App = ({ simpleAction }) => {
   return (
@@ -34,6 +35,7 @@ const App = ({ simpleAction }) => {
             <Route path="/productDetails" element={<ProductDetails />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/checkout" element={<Checkout />}></Route>
+            <Route path="/bloghome" element={<Bloghome/>}></Route>
             <Route path="shop" element={<Shop />}></Route>
             <Route path="blogs">
               <Route path="blogcategory" element={<BlogCategory />} />
