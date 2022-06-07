@@ -5,7 +5,7 @@ import Images from "../config/image";
 
 const ProductDetails = () => {
   return (
-    <main className="main mb-10 pb-1">
+    <div className="mb-10 pb-1">
       <nav className="breadcrumb-nav container">
         <ul className="breadcrumb bb-no">
           <li>
@@ -555,7 +555,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 export default ProductDetails;

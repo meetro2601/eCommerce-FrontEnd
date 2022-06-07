@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 const Checkout = () => {
   return (
-    <main className="main checkout">
+    <div className="checkout">
       <nav className="breadcrumb-nav">
         <div className="container">
           <ul className="breadcrumb shop-breadcrumb bb-no">
             <li className="passed">
-              <a href="cart.html">Shopping Cart</a>
+            <Link to='/cart'>Shopping Cart</Link>
             </li>
             <li className="active">
-              <a href="checkout.html">Checkout</a>
+            <Link to='/checkout'>Checkout</Link>
             </li>
             <li>
               <a href="order.html">Order Complete</a>
@@ -555,7 +555,7 @@ const Checkout = () => {
           </form>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 export default Checkout;
