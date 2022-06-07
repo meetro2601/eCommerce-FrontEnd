@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import headerLogo from "../../assets/images/logo/header-logo.png";
-import shop from "../../assets/images/header-icon/shop.png";
+import brand from "../../assets/images/header-icon/shop.png";
 import deal from "../../assets/images/header-icon/deal.png";
 import blog from "../../assets/images/header-icon/blog.png";
 import sell from "../../assets/images/header-icon/delivery-box.png";
@@ -38,44 +38,34 @@ const Header = () => {
             </Link>
             <nav className="main-nav header-icon-menu">
               <ul className="menu">
-                <li className="active">
-
-
-                  <a href="/">
-                    <img src={shop} alt="shop"></img>
-
+                <li className="">
+                  <Link to="/">
+                    <img src={brand} alt="brand"></img>
                     <p>
-                      {" "}
                       Shop <span>By Brand</span>{" "}
                     </p>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/">
+                  <Link to='/shop'>
                     <img src={deal} alt='deal'></img>
                     <p>
-                      {" "}
                       Ready <span>Stock</span>{" "}
                     </p>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-
-                 
-                  <a href="/">
+                  <Link to="/blogs">
                     <img src={blog} alt="blog"></img>
-
                     <p>
-                      {" "}
                       Blogs <span>Latest News</span>{" "}
                     </p>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/seller">
                     <img src={sell} alt='sell'></img>
                     <p>
-                      {" "}
                       Sell<span>On Biomall</span>{" "}
                     </p>
                   </Link>
@@ -91,11 +81,9 @@ const Header = () => {
                 <a href="/">Sign in </a>
                 <div className="dropdown-box">
                   <Link to='/user/login'> Sign In</Link>
-
                   <Link to='/compare'> Compare</Link>
                   <hr />
                   <Link to='/user/register' className="Register">
-                    {" "}
                     Register
                   </Link>
                 </div>
@@ -171,11 +159,11 @@ const Header = () => {
               </div>
             </div>
             <div className="mr-0 mr-lg-2">
-
+              <Link to='/cart'>
               <i className="w-icon-cart">
                 <span className="cart-count">2</span>
               </i>
-
+              </Link>
             </div>
           </div>
         </div>

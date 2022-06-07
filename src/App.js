@@ -17,14 +17,14 @@ import BlogCategory from "./pages/BlogCategory";
 import Singleblog from "./pages/Singleblog";
 import Seller from "./pages/Seller";
 import AppLayout from "./components/Layout/AppLayout";
-import Bloghome from "./components/blog/Bloghome";
+import Bloghome from "./pages/Bloghome";
 
 const App = ({ simpleAction }) => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route element={<AppLayout/>}>
+          <Route element={<AppLayout />}>
             <Route path="/" element={<Home />}></Route>
             <Route path="user">
               <Route path="login" element={<Login />}></Route>
@@ -35,14 +35,14 @@ const App = ({ simpleAction }) => {
             <Route path="/productDetails" element={<ProductDetails />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/checkout" element={<Checkout />}></Route>
-            <Route path="/bloghome" element={<Bloghome/>}></Route>
             <Route path="shop" element={<Shop />}></Route>
             <Route path="blogs">
+              <Route index element={<Bloghome />}></Route>
               <Route path="blogcategory" element={<BlogCategory />} />
               <Route path="singleblog" element={<Singleblog />} />
             </Route>
           </Route>
-            <Route path="/seller" element={<Seller />}></Route>
+          <Route path="/seller" element={<Seller />}></Route>
         </Routes>
         <a
           id="scroll-top"

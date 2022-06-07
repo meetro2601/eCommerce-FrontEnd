@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   return (
@@ -42,19 +43,19 @@ const MobileMenu = () => {
           <div className="tab-pane active" id="main-menu">
             <ul className="mobile-menu">
               <li>
-                <a href="demo2.html">Home</a>
+                <Link to='/'>Home</Link>
               </li>
               <li>
-                <a href="shop.html">Shop</a>
+                <Link to='/'>Shop</Link>
               </li>
               <li>
-                <a href="/">Ready</a>
+                <Link to='/shop'>Ready</Link>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <Link to='/blogs'>Blog</Link>
               </li>
               <li>
-                <a href="/"> Sell</a>
+                <Link to='/seller'>Sell</Link>
               </li>
             </ul>
           </div>

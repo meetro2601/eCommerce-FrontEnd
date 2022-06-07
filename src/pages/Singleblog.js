@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Single1 from "../assets/images/blog/single/1.jpg";
 import Single2 from "../assets/images/blog/single/2.jpg";
 import Single3 from "../assets/images/blog/single/3.jpg";
@@ -13,10 +14,10 @@ const Singleblog = () => {
         <div className="container">
           <ul className="breadcrumb bb-no">
             <li>
-              <a href="demo1.html">Home</a>
+              <Link to='/blogs'>Home</Link>
             </li>
             <li>
-              <a href="blog.html">Blog</a>
+              <Link to='/blogs/blogcategory'>Category</Link>
             </li>
             <li>Blog Single</li>
           </ul>
@@ -392,9 +393,7 @@ const Singleblog = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3">
           <BlogSidebar></BlogSidebar>
-        </div>
       </div>
     </>
   );

@@ -15,10 +15,7 @@ const BlogCategory = () => {
         <div className="container">
           <ul className="breadcrumb bb-no">
             <li>
-              <a href="demo1.html">Home</a>
-            </li>
-            <li>
-              <a href="blog.html">Blog</a>
+              <Link to='/blogs'>Home</Link>
             </li>
             <li>Category</li>
           </ul>
@@ -336,9 +333,7 @@ const BlogCategory = () => {
           </div>
         </div>
       </div>
-      <div className="col-md-3">
           <BlogSidebar/>
-      </div>
     </div>
     </>
   );

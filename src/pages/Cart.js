@@ -1,15 +1,16 @@
+import { Link } from "react-router-dom";
 import Images from "../config/image";
 
 const Cart = (props) => {
 
     return (
 
-        <main className="main cart">
+        <div className="cart">
             <nav className="breadcrumb-nav">
                 <div className="container">
                     <ul className="breadcrumb shop-breadcrumb bb-no">
-                        <li className="active"><a href="cart.html">Shopping Cart</a></li>
-                        <li><a href="checkout.html">Checkout</a></li>
+                        <li className="active"><Link to='/cart'>Shopping Cart</Link></li>
+                        <li><Link to='/checkout'>Checkout</Link></li>
                         <li><a href="order.html">Order Complete</a></li>
                     </ul>
                 </div>
@@ -200,7 +201,7 @@ const Cart = (props) => {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
 export default Cart;
