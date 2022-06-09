@@ -143,7 +143,30 @@
       -ms-flex: 1;
           flex: 1;
 }
-
+.header-middle .cart-icon{
+  position: relative;
+}
+.header-middle .cart-icon > a i {
+  font-size: 2.6rem;
+  color: inherit;
+}
+.header-middle .cart-icon .cart-count{
+  position: absolute;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  font-style: normal;
+  z-index: 1;
+  right: -8px;
+  top: -5px;
+  font-family: Poppins, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  background: #FF7272;
+  color: #fff;
+  text-align: center;
+}
 
 .header-search {
   position: relative;
@@ -634,7 +657,7 @@
 .dropdown:hover > a, .dropdown.show > a {
   color: #0088cc;
 }
-.dropdown a {
+.dropdown a, .dropdown button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,7 +677,7 @@
 .dropdown > a::after {
   display: inline-block;
   margin-left: 6px;
-  content: "\f107";
+  content: "";
   font-family: "Font Awesome 5 Free";
   font-size: 8px;
   font-weight: 900;
@@ -662,7 +685,6 @@
 .dropdown li.active > a, .dropdown li:hover > a {
   color: #0088cc;
 }
-
 .dropdown-box {
   position: absolute;
   right: 0;
@@ -694,9 +716,7 @@
 .header-sign-in .dropdown-box hr {border: 0; height: 0;}
 .header-sign-in .dropdown-box .Register {background-color: #08c;justify-content: center;color: #fff;padding: 13px;}
 .header-sign-in .dropdown-box {padding-bottom: 0;}
-.cart-dropdown .cart-toggle {
-  padding: 0;
-}
+
 .header-sign-in .dropdown-box .Register:hover {
     color: #fff;
 }
@@ -730,11 +750,7 @@
 .category-menu > li:not(:last-child) > a {
   border-bottom: 1px solid #eeeeee;
 }
-.category-menu > li:last-child > a i {
-  margin: 0 0 0 0.4rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
+
 .category-menu li .megamenu {
   padding: 0 2rem;
 }
@@ -824,7 +840,7 @@
   top: -1rem;
 }
 .vertical-menu > .has-submenu > a::after {
-  content: "\f107";
+  content: "";
   position: absolute;
   right: 1rem;
   line-height: 0;
@@ -843,6 +859,7 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-transform: capitalize;
+  color: inherit;
 }
 .category-dropdown > button i {
   margin-bottom: 0.1rem;
@@ -854,6 +871,8 @@
       -ms-flex: 1;
           flex: 1;
   margin-left: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 .category-dropdown > button::after {
   font-family: "wolmart";

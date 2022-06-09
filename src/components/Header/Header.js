@@ -78,7 +78,7 @@ const Header = () => {
           >
             <div className="header-sign-in">
               <div className="dropdown">
-                <a href="/">Sign in </a>
+                <a href="/">Sign in</a>
                 <div className="dropdown-box">
                   <Link to='/user/login'> Sign In</Link>
                   <Link to='/compare'> Compare</Link>
@@ -158,8 +158,8 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="mr-0 mr-lg-2">
-              <Link to='/cart'>
+            <div className="cart-icon mr-0 mr-lg-2">
+              <Link to='/cart' className="">
               <i className="w-icon-cart">
                 <span className="cart-count">2</span>
               </i>
