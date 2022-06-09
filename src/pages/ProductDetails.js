@@ -111,42 +111,33 @@ const ProductDetails = () => {
                     <div className="social-links-wrapper">
                       <div className="social-links">
                         <div className="social-icons social-no-color border-thin">
-                          <a
-                            href="/"
+                          <button
                             className="social-icon social-facebook w-icon-facebook"
-                          >F</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="social-icon social-twitter w-icon-twitter"
-                          >T</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="social-icon social-pinterest fab fa-pinterest-p"
-                          >P</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="social-icon social-whatsapp fab fa-whatsapp"
-                          >W</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="social-icon social-youtube fab fa-linkedin-in"
-                          >L</a>
+                          ></button>
                         </div>
                       </div>
                       <span className="divider d-xs-show"></span>
                       <div className="product-link-wrapper d-flex">
-                        <a
-                          href="/"
+                        <button
                           className="btn-product-icon btn-wishlist w-icon-heart"
                         >
-                          <span></span>
-                        </a>
-                        <a
-                          href="/"
+                        </button>
+                        <button
                           className="btn-product-icon btn-compare btn-icon-left w-icon-compare"
                         >
-                          <span></span>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -331,21 +322,18 @@ const ProductDetails = () => {
                           />
                         </a>
                         <div className="product-action-vertical">
-                          <a
-                            href="/"
+                          <button
                             className="btn-product-icon btn-cart w-icon-cart"
                             title="Add to cart"
-                          >C</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-wishlist w-icon-heart"
                             title="Add to wishlist"
-                          >W</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Add to Compare"
-                          >A</a>
+                          ></button>
                         </div>
                       </figure>
                       <div className="product-details">
@@ -369,21 +357,18 @@ const ProductDetails = () => {
                           />
                         </a>
                         <div className="product-action-vertical">
-                          <a
-                            href="/"
+                          <button
                             className="btn-product-icon btn-cart w-icon-cart"
                             title="Add to cart"
-                          >C</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-wishlist w-icon-heart"
                             title="Add to wishlist"
-                          >W</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Add to Compare"
-                          >A</a>
+                          ></button>
                         </div>
                       </figure>
                       <div className="product-details">
@@ -416,21 +401,18 @@ const ProductDetails = () => {
                           />
                         </a>
                         <div className="product-action-vertical">
-                          <a
-                            href="/"
+                          <button
                             className="btn-product-icon btn-cart w-icon-cart"
                             title="Add to cart"
-                          >C</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-wishlist w-icon-heart"
                             title="Add to wishlist"
-                          >W</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Add to Compare"
-                          >A</a>
+                          ></button>
                         </div>
                       </figure>
                       <div className="product-details">
@@ -454,21 +436,18 @@ const ProductDetails = () => {
                           />
                         </a>
                         <div className="product-action-vertical">
-                          <a
-                            href="/"
+                          <button
                             className="btn-product-icon btn-cart w-icon-cart"
                             title="Add to cart"
-                          >C</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-wishlist w-icon-heart"
                             title="Add to wishlist"
-                          >W</a>
-                          <a
-                            href="/"
+                          ></button>
+                          <button
                             className="btn-product-icon btn-compare w-icon-compare"
                             title="Add to Compare"
-                          >A</a>
+                          ></button>
                         </div>
                       </figure>
                       <div className="product-details">

@@ -11,21 +11,18 @@ const ProductCard = ({detail}) => {
           <img src={detail.images[1]} alt="Product" width="300" height="338"></img>
         </Link>
         <div className="product-action-vertical">
-          <a
-            href="/"
+          <button
             className="btn-product-icon btn-cart w-icon-cart"
             title="Add to cart"
-          >C</a>
-          <a
-            href="/"
+          ></button>
+          <button
             className="btn-product-icon btn-wishlist w-icon-heart"
             title="Add to wishlist"
-          >W</a>
-          <a
-            href="/"
+          ></button>
+          <button
             className="btn-product-icon btn-compare w-icon-compare"
             title="Add to Compare"
-          >A</a>
+          ></button>
         </div>
       </figure>
       <div className="product-details">

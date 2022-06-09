@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/images/logo/header-logo.png";
 import map from "../assets/images/seller/map.png";
 import worldwide from "../assets/images/seller/we_worldwide.png";
@@ -8,6 +8,19 @@ import SellerNews from "../components/Seller/SellerNews";
 import { Link } from "react-router-dom";
 
 const Seller = () => {
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.async = true
+    script.src = "./js/sellerscript.js"
+    document.body.appendChild(script)
+
+    return ()=>{
+      document.body.removeChild(script)
+    }
+  }, [])
+  
+
   return (
     <div className="seller-module">
       <div className="full-width-header">
