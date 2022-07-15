@@ -20,7 +20,7 @@ const productsList = [
     id: 1,
     name: "Women's Comforter",
     brand: "XYZ",
-    price: "$45.62 - $58.28",
+    price: "$45.62",
     images: [pro11, pro12],
   },
   {

@@ -1,15 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({detail}) => {
-
+const ProductCard = ({ detail }) => {
   return (
-    <div className="product text-center">
-      <figure className="product-media">
-        <Link to='/productDetails'>
-          <img src={detail.images[0]} alt="Product" width="300" height="338"></img>
-          <img src={detail.images[1]} alt="Product" width="300" height="338"></img>
-        </Link>
+    <div className="product">
+      <div className="product-img-action-wrap">
+        <div className="product-media">
+          <Link to="/productDetails">
+            <img
+              src={detail.images[0]}
+              alt="Product"
+              width="300"
+              height="338"
+            ></img>
+            <img
+              src={detail.images[1]}
+              alt="Product"
+              width="300"
+              height="338"
+            ></img>
+          </Link>
+        </div>
+        <div className="product-label">
+          <span className="label-hot">Hot</span>
+        </div>
         <div className="product-action-vertical">
           <button
             className="btn-product-icon btn-cart w-icon-cart"
@@ -24,14 +38,23 @@ const ProductCard = ({detail}) => {
             title="Add to Compare"
           ></button>
         </div>
-      </figure>
+      </div>
       <div className="product-details">
+        <p className="product-cat">
+          <Link to="#">Category</Link>
+        </p>
         <h4 className="product-name">
-          <Link to ='/productDetails'>{detail.name}</Link>
+          <Link to="/productDetails">{detail.name}</Link>
         </h4>
-          <h5>Brand: {detail.brand}</h5>
-          <h5 className="product-price">
-          {detail.price}</h5>
+        <div className="product-price-wrap">
+          <div className="product-price">
+            <ins className="new-price">{detail.price}</ins>
+            <del className="old-price">$183.47</del>
+          </div>
+          <button className="add-cart">
+            <i className="fa fa-cart-arrow-down mr-1"></i>Add{" "}
+          </button>
+        </div>
       </div>
     </div>
   );

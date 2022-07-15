@@ -1,7 +1,7 @@
 
 /* header */
 .header {
-  font-family: Poppins, sans-serif;
+  font-family: "Quicksand", sans-serif;
   background: #fff;
   color: #333;
 }
@@ -159,7 +159,7 @@
   z-index: 1;
   right: -8px;
   top: -5px;
-  font-family: Poppins, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.8rem;
@@ -183,7 +183,7 @@
   border-right: 0;
   font-size: 1.2rem;
   letter-spacing: 0;
-  font-family: Poppins, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .header-search input.form-control::-webkit-input-placeholder {
   color: inherit;
@@ -873,6 +873,7 @@
   margin-left: 0.7rem;
   font-size: 1.4rem;
   font-weight: 600;
+  font-family: "Quicksand",sans-serif;
 }
 .category-dropdown > button::after {
   font-family: "wolmart";

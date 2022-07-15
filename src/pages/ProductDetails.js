@@ -24,15 +24,15 @@ const ProductDetails = () => {
               <div className="product product-single row">
                 <div className="col-md-6 mb-6">
                   <div className="product-gallery product-gallery-sticky product-gallery-vertical">
-                          <figure className="product-image">
-                            <img
-                              src={Images.ProductDetailImage}
-                              data-zoom-image={Images.ProductDetailImage}
-                              alt="Electronics Black Wrist Watch"
-                              width="800"
-                              height="900"
-                            />
-                          </figure>
+                    <figure className="product-image">
+                      <img
+                        src={Images.ProductDetailImage}
+                        data-zoom-image={Images.ProductDetailImage}
+                        alt="Electronics Black Wrist Watch"
+                        width="800"
+                        height="900"
+                      />
+                    </figure>
                   </div>
                 </div>
                 <div className="col-md-6 sticky-sidebar-wrapper mb-4 mb-md-6">
@@ -111,33 +111,17 @@ const ProductDetails = () => {
                     <div className="social-links-wrapper">
                       <div className="social-links">
                         <div className="social-icons social-no-color border-thin">
-                          <button
-                            className="social-icon social-facebook w-icon-facebook"
-                          ></button>
-                          <button
-                            className="social-icon social-twitter w-icon-twitter"
-                          ></button>
-                          <button
-                            className="social-icon social-pinterest fab fa-pinterest-p"
-                          ></button>
-                          <button
-                            className="social-icon social-whatsapp fab fa-whatsapp"
-                          ></button>
-                          <button
-                            className="social-icon social-youtube fab fa-linkedin-in"
-                          ></button>
+                          <button className="social-icon social-facebook w-icon-facebook"></button>
+                          <button className="social-icon social-twitter w-icon-twitter"></button>
+                          <button className="social-icon social-pinterest fab fa-pinterest-p"></button>
+                          <button className="social-icon social-whatsapp fab fa-whatsapp"></button>
+                          <button className="social-icon social-youtube fab fa-linkedin-in"></button>
                         </div>
                       </div>
                       <span className="divider d-xs-show"></span>
                       <div className="product-link-wrapper d-flex">
-                        <button
-                          className="btn-product-icon btn-wishlist w-icon-heart"
-                        >
-                        </button>
-                        <button
-                          className="btn-product-icon btn-compare btn-icon-left w-icon-compare"
-                        >
-                        </button>
+                        <button className="btn-product-icon btn-wishlist w-icon-heart"></button>
+                        <button className="btn-product-icon btn-compare btn-icon-left w-icon-compare"></button>
                       </div>
                     </div>
                   </div>
@@ -298,7 +282,7 @@ const ProductDetails = () => {
                 <Swiper
                   className="swiper-theme"
                   modules={[Pagination]}
-                  pagination={{clickable:true}}
+                  pagination={{ clickable: true }}
                   spaceBetween={20}
                   slidesPerView={2}
                   breakpoints={{
@@ -312,15 +296,20 @@ const ProductDetails = () => {
                 >
                   <SwiperSlide>
                     <div className="product text-center">
-                      <figure className="product-media">
-                        <a href="product-default.html">
-                          <img
-                            src={Images.ProductImage5}
-                            alt="Product"
-                            width="300"
-                            height="338"
-                          />
-                        </a>
+                      <div className="product-img-action-wrap">
+                        <div className="product-media">
+                          <Link to="/productDetails">
+                            <img
+                              src={Images.ProductImage2}
+                              alt="Product"
+                              width="300"
+                              height="338"
+                            ></img>
+                          </Link>
+                        </div>
+                        <div className="product-label">
+                          <span className="label-hot">Hot</span>
+                        </div>
                         <div className="product-action-vertical">
                           <button
                             className="btn-product-icon btn-cart w-icon-cart"
@@ -335,27 +324,33 @@ const ProductDetails = () => {
                             title="Add to Compare"
                           ></button>
                         </div>
-                      </figure>
+                      </div>
                       <div className="product-details">
                         <h4 className="product-name">
                           <Link to="/productDetails">Drone</Link>
                         </h4>
-                        <h5>Brand: PQRS</h5>
-                        <h5 className="product-price">$632.00</h5>
+                        <div className="product-price">
+                          <ins className="new-price">$632.00</ins>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="product text-center">
-                      <figure className="product-media">
-                        <a href="product-default.html">
-                          <img
-                            src={Images.ProductImage6}
-                            alt="Product"
-                            width="300"
-                            height="338"
-                          />
-                        </a>
+                      <div className="product-img-action-wrap">
+                        <div className="product-media">
+                          <Link to="/productDetails">
+                            <img
+                              src={Images.ProductImage5}
+                              alt="Product"
+                              width="300"
+                              height="338"
+                            ></img>
+                          </Link>
+                        </div>
+                        <div className="product-label">
+                          <span className="label-hot">Hot</span>
+                        </div>
                         <div className="product-action-vertical">
                           <button
                             className="btn-product-icon btn-cart w-icon-cart"
@@ -370,36 +365,34 @@ const ProductDetails = () => {
                             title="Add to Compare"
                           ></button>
                         </div>
-                      </figure>
+                      </div>
                       <div className="product-details">
                         <h4 className="product-name">
                           <Link to="/productDetails">Official Camera</Link>
                         </h4>
-                        <h5>Brand: PQRS</h5>
-                        <h5 className="product-price">
-                          <ins class="new-price">$263.00</ins>
-                          <del class="old-price">$300.00</del>
-                        </h5>
+                        <div className="product-price">
+                          <ins className="new-price">$263.00</ins>
+                          <del className="old-price">$300.00</del>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="product text-center">
-                      <figure className="product-media">
-                        <a href="product-default.html">
-                          <img
-                            src={Images.ProductImage71}
-                            alt="Product"
-                            width="300"
-                            height="338"
-                          />
-                          <img
-                            src={Images.ProductImage72}
-                            alt="Product"
-                            width="300"
-                            height="338"
-                          />
-                        </a>
+                      <div className="product-img-action-wrap">
+                        <div className="product-media">
+                          <Link to="/productDetails">
+                            <img
+                              src={Images.ProductImage6}
+                              alt="Product"
+                              width="300"
+                              height="338"
+                            ></img>
+                          </Link>
+                        </div>
+                        <div className="product-label">
+                          <span className="label-hot">Hot</span>
+                        </div>
                         <div className="product-action-vertical">
                           <button
                             className="btn-product-icon btn-cart w-icon-cart"
@@ -414,27 +407,39 @@ const ProductDetails = () => {
                             title="Add to Compare"
                           ></button>
                         </div>
-                      </figure>
+                      </div>
                       <div className="product-details">
-                      <h4 className="product-name">
+                        <h4 className="product-name">
                           <Link to="/productDetails">Phone Charge Pad</Link>
                         </h4>
-                        <h5>Brand: PQRS</h5>
-                        <h5 className="product-price">$23.00</h5>
+                        <div className="product-price">
+                          <ins className="new-price">$23.00</ins>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="product text-center">
-                      <figure className="product-media">
-                        <a href="product-default.html">
-                          <img
-                            src={Images.ProductImage2}
-                            alt="Product"
-                            width="300"
-                            height="338"
-                          />
-                        </a>
+                      <div className="product-img-action-wrap">
+                        <div className="product-media">
+                          <Link to="/productDetails">
+                            <img
+                              src={Images.ProductImage71}
+                              alt="Product"
+                              width="300"
+                              height="338"
+                            ></img>
+                            <img
+                              src={Images.ProductImage72}
+                              alt="Product"
+                              width="300"
+                              height="338"
+                            ></img>
+                          </Link>
+                        </div>
+                        <div className="product-label">
+                          <span className="label-hot">Hot</span>
+                        </div>
                         <div className="product-action-vertical">
                           <button
                             className="btn-product-icon btn-cart w-icon-cart"
@@ -449,13 +454,14 @@ const ProductDetails = () => {
                             title="Add to Compare"
                           ></button>
                         </div>
-                      </figure>
+                      </div>
                       <div className="product-details">
-                      <h4 className="product-name">
+                        <h4 className="product-name">
                           <Link to="/productDetails">Fashionalble Pencil</Link>
                         </h4>
-                        <h5>Brand: PQRS</h5>
-                        <h5 className="product-price">$50.00</h5>
+                        <div className="product-price">
+                          <ins className="new-price">$50.00</ins>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
