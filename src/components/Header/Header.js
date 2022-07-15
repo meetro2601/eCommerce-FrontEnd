@@ -30,16 +30,17 @@ const Header = () => {
         <div className="container">
           <div className="header-left">
             <button
-              className="mobile-menu-toggle w-icon-hamburger"
+              className="mobile-menu-toggle"
               aria-label="menu-toggle"
-            >Menu</button>
+            ><i className="w-icon-hamburger"></i>
+              </button>
             <Link to='/' className="logo ml-lg-0">
               <img src={headerLogo} alt="logo" width="180" />
             </Link>
             <nav className="main-nav header-icon-menu">
               <ul className="menu">
                 <li className="">
-                  <Link to="/">
+                  <Link to="/brands">
                     <img src={brand} alt="brand"></img>
                     <p>
                       Shop <span>By Brand</span>{" "}

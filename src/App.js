@@ -18,6 +18,8 @@ import Singleblog from "./pages/Singleblog";
 import Seller from "./pages/Seller";
 import AppLayout from "./components/Layout/AppLayout";
 import Bloghome from "./pages/Bloghome";
+import Brands from "./pages/Brands";
+import Error from "./pages/404Error";
 
 const App = ({ simpleAction }) => {
   return (
@@ -36,11 +38,13 @@ const App = ({ simpleAction }) => {
             <Route path="/cart" element={<Cart />}></Route>
             <Route path="/checkout" element={<Checkout />}></Route>
             <Route path="shop" element={<Shop />}></Route>
+            <Route path="brands" element={<Brands/>}></Route>
             <Route path="blogs">
               <Route index element={<Bloghome />}></Route>
               <Route path="blogcategory" element={<BlogCategory />} />
               <Route path="singleblog" element={<Singleblog />} />
             </Route>
+            <Route path="*" element={<Error/>}></Route>
           </Route>
           <Route path="/seller" element={<Seller />}></Route>
         </Routes>

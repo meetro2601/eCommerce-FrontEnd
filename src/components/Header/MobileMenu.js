@@ -46,10 +46,10 @@ const MobileMenu = () => {
                 <Link to='/'>Home</Link>
               </li>
               <li>
-                <Link to='/'>Shop</Link>
+                <Link to='/brands'>Shop by Brands</Link>
               </li>
               <li>
-                <Link to='/shop'>Ready</Link>
+                <Link to='/shop'>Ready Stocks</Link>
               </li>
               <li>
                 <Link to='/blogs'>Blog</Link>
