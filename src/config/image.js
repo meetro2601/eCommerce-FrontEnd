@@ -1,4 +1,7 @@
-import ProductDetailImage from '../assets/images/products/vertical_thumb/1-800x900.jpg';
+import ProductDetailImage1 from '../assets/images/products/vertical_thumb/1-800x900.jpg';
+import ProductDetailImage2 from '../assets/images/products/vertical_thumb/2-800x900.jpg';
+import ProductDetailImage3 from '../assets/images/products/vertical_thumb/3-800x900.jpg';
+import ProductDetailImage4 from '../assets/images/products/vertical_thumb/4-800x900.jpg';
 import ProductImage1 from '../assets/images/products/default/1-1.jpg';
 import ProductImage2 from '../assets/images/products/default/2.jpg';
 import ProductImage3 from '../assets/images/products/default/3.jpg';
@@ -12,7 +15,10 @@ import Brand2 from '../assets/images/brands/2.png';
 import Shop12 from '../assets/images/shop/12.jpg';
 import Shop13 from '../assets/images/shop/13.jpg';
 const Images = {
-    ProductDetailImage: ProductDetailImage,
+    ProductDetailImage1: ProductDetailImage1,
+    ProductDetailImage2: ProductDetailImage2,
+    ProductDetailImage3: ProductDetailImage3,
+    ProductDetailImage4: ProductDetailImage4,
     ProductImage1: ProductImage1,
     ProductImage2: ProductImage2,
     ProductImage3: ProductImage3,

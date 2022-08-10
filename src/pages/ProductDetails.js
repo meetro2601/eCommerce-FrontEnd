@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Pagination } from "swiper";
+import { Navigation, Pagination, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Images from "../config/image";
 
 const ProductDetails = () => {
+  const [thumbsSwiper, setthumbsSwiper] = useState(null);
+
   return (
     <div className="mb-10 pb-1">
       <nav className="breadcrumb-nav container">
@@ -23,16 +26,99 @@ const ProductDetails = () => {
             <div className="main-content">
               <div className="product product-single row">
                 <div className="col-md-6 mb-6">
-                  <div className="product-gallery product-gallery-sticky product-gallery-vertical">
-                    <figure className="product-image">
-                      <img
-                        src={Images.ProductDetailImage}
-                        data-zoom-image={Images.ProductDetailImage}
-                        alt="Electronics Black Wrist Watch"
-                        width="800"
-                        height="900"
-                      />
-                    </figure>
+                  <div className="product-gallery product-gallery-sticky">
+                    <Swiper
+                      className="nav-inner swiper-theme product-single-swiper"
+                      modules={[Navigation, Thumbs]}
+                      navigation
+                      thumbs={{ swiper: thumbsSwiper }}
+                    >
+                      <SwiperSlide>
+                        <figure className="product-image">
+                          <img
+                            src={Images.ProductDetailImage1}
+                            data-zoom-image={Images.ProductDetailImage1}
+                            alt="Electronics Black Wrist Watch"
+                            width="800"
+                            height="900"
+                          />
+                        </figure>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <figure className="product-image">
+                          <img
+                            src={Images.ProductDetailImage2}
+                            data-zoom-image={Images.ProductDetailImage2}
+                            alt="Electronics Black Wrist Watch"
+                            width="800"
+                            height="900"
+                          />
+                        </figure>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <figure className="product-image">
+                          <img
+                            src={Images.ProductDetailImage3}
+                            data-zoom-image={Images.ProductDetailImage3}
+                            alt="Electronics Black Wrist Watch"
+                            width="800"
+                            height="900"
+                          />
+                        </figure>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <figure className="product-image">
+                          <img
+                            src={Images.ProductDetailImage4}
+                            data-zoom-image={Images.ProductDetailImage4}
+                            alt="Electronics Black Wrist Watch"
+                            width="800"
+                            height="900"
+                          />
+                        </figure>
+                      </SwiperSlide>
+                    </Swiper>
+                    <Swiper
+                      onSwiper={setthumbsSwiper}
+                      modules={[Navigation]}
+                      navigation
+                      className="product-thumbs-wrap"
+                      slidesPerView={3}
+                      spaceBetween={10}
+                    >
+                      <SwiperSlide className="product-thumb">
+                        <img
+                          src={Images.ProductDetailImage1}
+                          alt="Product Thumb"
+                          width="800"
+                          height="900"
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide className="product-thumb">
+                        <img
+                          src={Images.ProductDetailImage2}
+                          alt="Product Thumb"
+                          width="800"
+                          height="900"
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide className="product-thumb">
+                        <img
+                          src={Images.ProductDetailImage3}
+                          alt="Product Thumb"
+                          width="800"
+                          height="900"
+                        />
+                      </SwiperSlide>
+                      <SwiperSlide className="product-thumb">
+                        <img
+                          src={Images.ProductDetailImage4}
+                          alt="Product Thumb"
+                          width="800"
+                          height="900"
+                        />
+                      </SwiperSlide>
+                    </Swiper>
                   </div>
                 </div>
                 <div className="col-md-6 sticky-sidebar-wrapper mb-4 mb-md-6">
@@ -41,6 +127,21 @@ const ProductDetails = () => {
                     data-sticky-options="{'minWidth': 767}"
                   >
                     <h1 className="product-title">Professsional Camera Set</h1>
+                    <div className="ratings-container">
+                      <div className="ratings-full">
+                        <span
+                          className="ratings"
+                          style={{ width: "80%" }}
+                        ></span>
+                        <span className="tooltiptext tooltip-top"></span>
+                      </div>
+                      <a href="#product-tab-reviews" className="rating-reviews">
+                        (3 Reviews)
+                      </a>
+                    </div>
+                    <div className="product-price">
+                      <ins className="new-price">$780.00</ins>
+                    </div>
                     <div className="product-bm-wrapper">
                       <figure className="brand">
                         <img
@@ -64,32 +165,37 @@ const ProductDetails = () => {
                     </div>
 
                     <hr className="product-divider" />
-
-                    <div className="product-price">
-                      <ins className="new-price">$780.00</ins>
-                    </div>
-
-                    <div className="ratings-container">
-                      <div className="ratings-full">
-                        <span
-                          className="ratings"
-                          style={{ width: "80%" }}
-                        ></span>
-                        <span className="tooltiptext tooltip-top"></span>
-                      </div>
-                      <a href="#product-tab-reviews" className="rating-reviews">
-                        (3 Reviews)
-                      </a>
-                    </div>
-
                     <div className="product-short-desc lh-2">
                       Ultrices eros in cursus turpis massa cursus mattis.
                       Volutpat ac tincidunt vitae semper quis lectus aliquam id.
                     </div>
 
                     <hr className="product-divider" />
-
-                    <div className="product-form container">
+                    <div className="product-form product-variation-form product-size-swatch">
+                      <label className="mb-1">Size:</label>
+                      <div className="flex-wrap d-flex align-items-center product-variations">
+                        <Link to="#" className="size active">
+                          Small
+                        </Link>
+                        <Link to="#" className="size">
+                          Medium
+                        </Link>
+                        <Link to="#" className="size">
+                          Large
+                        </Link>
+                        <Link to="#" className="size">
+                          Extra Large
+                        </Link>
+                      </div>
+                      {/* <Link
+                        to="#"
+                        className="product-variation-clean"
+                        
+                      >
+                        Clean All
+                      </Link> */}
+                    </div>
+                    
                       <div className="product-qty-form">
                         <div className="input-group">
                           <input
@@ -102,12 +208,16 @@ const ProductDetails = () => {
                           <button className="quantity-minus w-icon-minus"></button>
                         </div>
                       </div>
+                      <div className="d-flex mb-4">
                       <button className="btn btn-primary btn-cart">
                         <i className="w-icon-cart"></i>
                         <span>Add to Cart</span>
                       </button>
-                    </div>
-
+                        <button className="btn-product-icon btn-wishlist w-icon-heart">
+                        </button>
+                        <button className="btn-product-icon btn-compare btn-icon-left w-icon-compare"></button>
+                      </div>
+                      <hr className="product-divider" />
                     <div className="social-links-wrapper">
                       <div className="social-links">
                         <div className="social-icons social-no-color border-thin">
@@ -117,11 +227,6 @@ const ProductDetails = () => {
                           <button className="social-icon social-whatsapp fab fa-whatsapp"></button>
                           <button className="social-icon social-youtube fab fa-linkedin-in"></button>
                         </div>
-                      </div>
-                      <span className="divider d-xs-show"></span>
-                      <div className="product-link-wrapper d-flex">
-                        <button className="btn-product-icon btn-wishlist w-icon-heart"></button>
-                        <button className="btn-product-icon btn-compare btn-icon-left w-icon-compare"></button>
                       </div>
                     </div>
                   </div>

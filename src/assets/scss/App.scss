@@ -303,31 +303,3 @@ table {
             transform: translateY(0);
   }
 }
-
-.btn {
-  display: inline-block;
-  border: 2px solid #ccc;
-  background-color: #fff;
-  color: #666;
-  outline: 0;
-  border-radius: 0;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 1.4rem;
-  padding: 0.93em 1.98em;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: center;
-  -webkit-transition: color 0.3s, border-color 0.3s, background-color 0.3s, -webkit-box-shadow 0.3s;
-  transition: color 0.3s, border-color 0.3s, background-color 0.3s, -webkit-box-shadow 0.3s;
-  transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
-  transition: color 0.3s, border-color 0.3s, background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.flex-1 {
-  -webkit-box-flex: 1 !important;
-      -ms-flex: 1 !important;
-          flex: 1 !important;
-}
