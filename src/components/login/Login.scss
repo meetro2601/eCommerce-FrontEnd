@@ -1,7 +1,13 @@
 .login-popup {
+  max-width: 550px;
+  padding: 33px 50px 26px;
   margin: 42px auto 50px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.login-popup.sign-up{
+  max-width: 700px;
 }
 .login-popup .checkbox-round + label::before {
   border-radius: 50%;
@@ -29,10 +35,6 @@
 }
 .login-popup .login-popup ul.nav.nav-tabs {
   border: 0;
-}
-.login-popup {
-  max-width: 550px;
-  padding: 33px 50px 26px;
 }
 .login-popup ul.nav.nav-tabs {
   border: 0;
@@ -67,12 +69,43 @@
   text-align: center;
   text-transform: uppercase;
 }
+.login-popup .heading{
+  padding: 1.3rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  position: relative;
+  color: #336699;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.login-popup .heading::after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 25%;
+  width: 50%;
+  border-top: 2px solid #336699;
+}
+.login-popup .error{
+  color: red;
+  font-size: 12px;
+  margin: 5px 0 10px;
+}
 .login-popup .form-group {
   margin-bottom: 2.6rem;
 }
 .login-popup .form-group label {
   display: block;
   margin-bottom: 0.5rem;
+}
+.login-popup select{
+  border: 1px solid #eee; 
+  color: #999;
 }
 .login-popup .form-control {
   display: block;
@@ -92,7 +125,12 @@
   outline: 0;
   min-height: 44px;
 }
-
+.login-popup .form-control:focus{
+  border-color: black !important;
+}
+.login-popup .form-control.field-error{
+  border: 1px solid red;
+}
 .custom-checkbox {
   position: absolute;
   opacity: 0;
@@ -123,8 +161,8 @@
 .custom-checkbox:checked + label::before,
 .custom-checkbox.checked + label::before {
   content: "";
-  border-color: #222;
-  background: #222;
+  border-color: #0088cc;
+  background: #0088cc;
   color: #fff;
   font-size: 9px;
   font-weight: 600;
@@ -156,15 +194,13 @@
   transform: none;
   border-color: #336699;
 }
-.login-popup #sign-in {
-  font-size: 20px;
-}
+
 .login-popup .tab-pane {
   padding-top: 30px;
   padding-bottom: 25px;
 }
 .login-popup .form-checkbox a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #a94442;
 }
 
@@ -228,15 +264,102 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.login-popup .form-group.w-48,
 .login-popup .form-group.w-100 {
   width: 100%;
 }
 @media (min-width: 768px) {
   .login-popup .form-group.w-48 {
     width: 48%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5em;
   }
   .login-popup .form-group.w-100 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5em;
   }
+}
+.login-popup input[type=number]::-webkit-outer-spin-button,
+.login-popup input[type=number]::-webkit-inner-spin-button,
+.login-popup input[type=number]{
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+.login-popup .dropdown-box{
+  left: 0;
+  right: auto;
+  height: 25vw;
+  overflow: auto
+}
+.login-popup .dropdown-box > li{
+  padding: 0.5rem 2rem !important;
+}
+.login-popup .dropdown-box > li:hover{
+  background-color: #0088cc;
+  color: white;
+}
+
+/* Modal CSS */
+.modal-overlay{
+  position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+    transition: opacity 0.4s;
+    z-index: 9999;
+}
+.modalCloseBtn{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.modalCloseBtn i{
+  height: 18px;
+  width: 18px;
+}
+.otpModal{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  z-index: 9999;
+  padding: 40px 50px;
+  width: 400px;
+}
+.otpModal .otpInput{
+  width: 35px;
+  height: 35px;
+  font-size: 2rem;
+  border: none;
+  text-align: center;
+  border-bottom: 0.5px solid #0088cc !important;
+  margin-right: 10px;
+}
+.otpModal .resendOtp{
+  background-color: transparent;
+  color: #0088cc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.otpModal .alertMsg{
+  padding: 8px 12px;
+  margin: 1.5rem 0;
+  border: 1px solid;
+  border-radius: 3px;
+}
+.otpModal .alertMsg.success{
+  background-color: rgb(172, 255, 172);
+  color: green;
+}
+.otpModal .alertMsg.failure{
+  background-color: rgb(255, 187, 187);
+  color: rgb(241, 1, 1);
 }

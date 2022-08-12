@@ -5396,109 +5396,107 @@ body .product-popup {
   display: none;
 }
 
-.login-popup {
-  max-width: 50rem;
-  padding: 3.3rem 5rem 2.6rem;
-}
-.login-popup .nav.nav-tabs .nav-item {
-  width: calc(50%);
-  margin: 0;
-}
+// .login-popup {
+//   max-width: 50rem;
+//   padding: 3.3rem 5rem 2.6rem;
+// }
+// .login-popup .nav.nav-tabs .nav-item {
+//   width: calc(50%);
+//   margin: 0;
+// }
 
-.login-popup .nav-item .nav-link {
-  padding: 1.3rem 0;
-  font-size: 2rem;
-  font-weight: 700;
-}
-.login-popup .nav-item .nav-link::after {
-  border-top-width: 3px;
-  -webkit-transform: none;
-  transform: none;
-}
-.login-popup .tab-pane {
-  padding-top: 3.3rem;
-  padding-bottom: 2.6rem;
-}
-.login-popup .tab-pane a:not(.btn):hover {
-  text-decoration: underline;
-}
-.login-popup #sign-in {
-  font-size: 1rem;
-}
-.login-popup .form-group {
-  margin-bottom: 2.6rem;
-}
-.login-popup .form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-.login-popup .form-control {
-  min-height: 4.4rem;
-}
-.login-popup .form-checkbox {
-  margin-top: 2.2rem;
-  margin-bottom: 2.3rem;
-}
-.login-popup .form-checkbox a {
-  font-size: 1.2rem;
-  color: #a94442;
-}
-.login-popup .btn {
-  display: block;
-  padding-top: 0.79em;
-  padding-bottom: 0.79em;
-}
-.login-popup p {
-  margin-bottom: 1rem;
-}
-.login-popup #sign-up p {
-  margin-bottom: 2.1rem;
-  line-height: 1.84;
-}
-.login-popup .social-icon {
-  margin-right: 0.8rem;
-}
-.login-popup .social-icons {
-  border: 1px solid #08c;
-  padding: 10px 20px;
-  margin-bottom: 15px;
-}
+// .login-popup .nav-item .nav-link {
+//   padding: 1.3rem 0;
+//   font-size: 2rem;
+//   font-weight: 700;
+// }
+// .login-popup .nav-item .nav-link::after {
+//   border-top-width: 3px;
+//   -webkit-transform: none;
+//   transform: none;
+// }
+// .login-popup .tab-pane {
+//   padding-top: 3.3rem;
+//   padding-bottom: 2.6rem;
+// }
+// .login-popup .tab-pane a:not(.btn):hover {
+//   text-decoration: underline;
+// }
 
-.login-popup .social-icons:before {
-  padding-right: 15px;
-}
+// .login-popup .form-group {
+//   margin-bottom: 2.6rem;
+// }
+// .login-popup .form-group label {
+//   display: block;
+//   margin-bottom: 0.5rem;
+// }
+// .login-popup .form-control {
+//   min-height: 4.4rem;
+// }
+// .login-popup .form-checkbox {
+//   margin-top: 2.2rem;
+//   margin-bottom: 2.3rem;
+// }
+// .login-popup .form-checkbox a {
+//   font-size: 1.2rem;
+//   color: #a94442;
+// }
+// .login-popup .btn {
+//   display: block;
+//   padding-top: 0.79em;
+//   padding-bottom: 0.79em;
+// }
+// .login-popup p {
+//   margin-bottom: 1rem;
+// }
+// .login-popup #sign-up p {
+//   margin-bottom: 2.1rem;
+//   line-height: 1.84;
+// }
+// .login-popup .social-icon {
+//   margin-right: 0.8rem;
+// }
+// .login-popup .social-icons {
+//   border: 1px solid #08c;
+//   padding: 10px 20px;
+//   margin-bottom: 15px;
+// }
 
-.login-popup .social-icons:hover {
-  background-color: #08c;
-  color: #fff;
-}
-.different_login {
-  text-align: center;
-  position: relative;
-  margin: 20px 0;
-}
-.different_login span {
-  background-color: #fff;
-  padding: 0 15px;
-  position: relative;
-  text-transform: uppercase;
-}
-.different_login::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  right: 0;
-  border-top: 1px solid #ddd;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+// .login-popup .social-icons:before {
+//   padding-right: 15px;
+// }
 
-.login-popup #sign-up {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+// .login-popup .social-icons:hover {
+//   background-color: #08c;
+//   color: #fff;
+// }
+// .different_login {
+//   text-align: center;
+//   position: relative;
+//   margin: 20px 0;
+// }
+// .different_login span {
+//   background-color: #fff;
+//   padding: 0 15px;
+//   position: relative;
+//   text-transform: uppercase;
+// }
+// .different_login::before {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 50%;
+//   right: 0;
+//   border-top: 1px solid #ddd;
+//   -webkit-transform: translateY(-50%);
+//   transform: translateY(-50%);
+// }
+
+// .login-popup #sign-up {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
 @media (min-width: 768px) {
   .product-popup .product-details {
     position: absolute;
