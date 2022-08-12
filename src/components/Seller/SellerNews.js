@@ -36,7 +36,7 @@ const SellerNews = () => {
                 alt="moneycontrol"
               />
               <p>
-                How e-commerce portal Biomall is trying to disrupt the lab
+                How e-commerce portal Wolmart is trying to disrupt the lab
                 products space
               </p>
               <a
@@ -56,7 +56,7 @@ const SellerNews = () => {
                 alt="insightsuccess"
               />
               <p>
-                Biomall.in: Offering a Seamless Online Lab Equipment Shopping
+                Wolmart.in: Offering a Seamless Online Lab Equipment Shopping
                 Experience
               </p>
               <a
@@ -96,7 +96,7 @@ const SellerNews = () => {
                 alt="biospectrum"
               />
               <p>
-                Biomall.in celebrates biz partnerships at India Lab Expo 2018
+                Wolmart.in celebrates biz partnerships at India Lab Expo 2018
               </p>
               <a
                 rel="noreferrer"
@@ -114,7 +114,7 @@ const SellerNews = () => {
                 className="img-responsive center-block"
                 alt="bangaloreinsider"
               />
-              <p>Meet Dr. S. Jhaveri: The Managing Director – Biomall.in</p>
+              <p>Meet Dr. S. Jhaveri: The Managing Director – Wolmart.in</p>
               <a
                 rel="noreferrer"
                 target="_blank"
@@ -132,7 +132,7 @@ const SellerNews = () => {
                 alt="startupidols"
               />
               <p>
-                Biomall.in – The Best Marketplace for Scientific and Diagnostic
+                Wolmart.in – The Best Marketplace for Scientific and Diagnostic
                 Products
               </p>
               <a

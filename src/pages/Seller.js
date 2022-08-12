@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import logo from "../assets/images/logo/header-logo.png";
+import logo from "../assets/images/logo/logo.png";
 import map from "../assets/images/seller/map.png";
-import worldwide from "../assets/images/seller/we_worldwide.png";
 import b4dot from "../assets/images/seller/b4-dot-6.png";
 import SellerTestimonials from "../components/Seller/SellerTestimonials";
 import SellerNews from "../components/Seller/SellerNews";
@@ -102,7 +101,6 @@ const Seller = () => {
           <div className="row align-items-center">
             <div className="rs-banner-left col-md-6 mb-7">
               <div className="banner-content text-center">
-                <img src={worldwide} alt='worldwide' />
                 <h1 className="title">
                   World’s Leading Portal for Laboratory, Life Science &
                   Diagnostic Products
@@ -311,7 +309,7 @@ const Seller = () => {
             <div className="howitswork-box">
               <span className="bank-to-bank"></span>
               <div className="howitswork-content">
-                <h3 className="s-title">Recevies Money from Biomall</h3>
+                <h3 className="s-title">Recevies Money from Wolmart</h3>
               </div>
             </div>
           </div>
@@ -428,7 +426,7 @@ const Seller = () => {
           <div className="copyright">
             <p>
               {" "}
-              Copyrights © 2020 <a href="http://rstheme.com/">Biomall.in</a>.
+              Copyrights © 2020 <a href="http://rstheme.com/">Wolmart.in</a>.
               All Rights Reserved.
             </p>
           </div>

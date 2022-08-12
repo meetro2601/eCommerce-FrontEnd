@@ -1,7 +1,7 @@
 import React from "react";
 import "../Footer/Footer.scss";
 import Payment from "../../assets/images/payment.png";
-import Footerlogo from "../../assets/images/logo/footer-logo.png";
+import Footerlogo from "../../assets/images/logo/logo.png";
 
 const Footer = () => {
   return (
