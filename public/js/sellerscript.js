@@ -7,7 +7,7 @@ $(document).ready(function () {
   ).focusout(function () {
     var text_val = $(this).val();
     if (text_val === "") {
-      console.log("empty!");
+      // console.log("empty!");
       $(this).removeClass("has-value");
     } else {
       $(this).addClass("has-value");

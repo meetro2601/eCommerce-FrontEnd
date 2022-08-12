@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProductSwiper from "../components/Product/ProductSwiper";
 import pro11 from "../assets/images/demos/demo2/products/1-1-1.jpg";
 import pro12 from "../assets/images/demos/demo2/products/1-1-2.jpg";
@@ -33,6 +33,23 @@ const productsList = [
 ];
 
 const Home = () => {
+
+  // useEffect(() => {
+  //   const script1 = document.createElement('script')
+  //   const script2 = document.createElement('script')
+  //   script1.async = true
+  //   // script2.async = true
+  //   // script2.src = "./js/jquery.min.js"
+  //   script1.src = "./js/main.min.js"
+  //   // document.body.appendChild(script2)
+  //   document.body.appendChild(script1)
+
+  //   return ()=>{
+  //     document.body.removeChild(script1)
+  //     // document.body.removeChild(script2)
+  //   }
+  // }, [])
+
   return (
     <>
       <div className="intro-section mb-7">

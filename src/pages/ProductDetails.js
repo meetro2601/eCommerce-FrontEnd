@@ -1,11 +1,33 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link} from "react-router-dom";
 import { Navigation, Pagination, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Images from "../config/image";
 
 const ProductDetails = () => {
   const [thumbsSwiper, setthumbsSwiper] = useState(null);
+  
+  useEffect(() => {
+  //   const script1 = document.createElement('script')
+  //   const script2 = document.createElement('script')
+  //   const script3 = document.createElement('script')
+  //   script1.async = true
+  //   script2.async = true
+  //   script3.async = true
+  //   script2.src = "./js/jquery.zoom.js"
+  //   script1.src = "./js/main.min.js"
+  //   script3.src = "./js/jquery.min.js"
+  //   document.body.appendChild(script3)
+  //   document.body.appendChild(script2)
+  //   document.body.appendChild(script1)
+
+  //   return ()=>{
+  //     document.body.removeChild(script1)
+  //     document.body.removeChild(script2)
+  //     document.body.removeChild(script3)
+  //   }
+ 
+  }, [])
 
   return (
     <div className="mb-10 pb-1">
